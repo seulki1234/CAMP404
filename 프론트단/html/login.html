@@ -5,101 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Lora");
-        *{
-            padding: 0;
-            margin: 0;
-            border: none;
-        }
-        body{
-            font-size: 14px;
-            font-family: "Lora", serif;
-        }
-        .login-container{
-            display: flex;
-            flex-direction: column;
-            width: 500px;
-            height: 450px;
-            padding: 40px;
-            box-sizing: border-box;
-            position: absolute;
-            left:50%;
-            top:50%;
-            margin-left:-250px;
-            margin-top:-250px;
-            border: solid 1px rgb(211, 208, 208);
-        }
-        .login-container > h2{
-            text-align: center;
-            font-size: 30px;
-            color: #487aff;
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-           
-        }
-        #login-form>input{
-            width: 100%;
-            height: 48px;
-            padding: 0 10px;
-            box-sizing: border-box;
-            margin-bottom: 16px;
-            border-radius: 6px;
-            background-color: #F8F8F8;
-           
-        }
-        #login-form > input::placeholder{
-            color: #D2D2D2;
-        }
-        #login-form > input[id="login"]{
-            color: #fff;
-            font-size: 16px;
-            background-color: #487aff;
-            margin-top: 20px;
-            font-family: "Open Sans", sans-serif;
-        }
-        #login-form > input[id="signUp"]{
-            color: #fff;
-            font-size: 16px;
-            background-color: rgb(212, 228, 254);
-            margin-top: 0px;
-            font-family: "Open Sans", sans-serif;
-        }
-        #login-form > input[type="checkbox"]{
-            display: none;
-        }
-        #login-form > label{
-            color: #999999;
-        }
-        #login-form input[type="checkbox"] + label{
-            cursor: pointer;
-            padding-left: 26px;
-            background-image: url("checkbox.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-        #login-form input[type="checkbox"]:checked + label{
-            background-image: url("checkbox-active.png");
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
-        
-    </style>
+    <title>Document</title>   
+    <link rel="stylesheet" href="/프론트단/css/login.css">
+    <script src="/프론트단/js/login.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <main>
+        <div data-include1="header" id="header"></div>
+
     <div class="login-container">
-        <h2>e-learning</h2>
-        <form method="post" id="login-form">
-            <input type="text" name="userId" id="userId" placeholder="username">
-            <input type="password" name="userPw" id="userPw" placeholder="password">
-            <label for="remember-id">
-                <input type="checkbox" id="remember-id">remember-id
-            </label>
-            <input id="login" type="submit" value="LOGIN">
-            <input id="signUp" type="submit" value="SIGNUP">
-        </form>
-    </div>
+        
+           <div> <img src="/프론트단/로고/CAMP404(기본).png"></div>
+                <form method="post" id="login-form" autocomplete="off">
+                    <input type="text" name="userId" id="userId" placeholder="아이디">
+                    <input type="password" name="userPw" id="userPw" placeholder="비밀번호">
+                    <label for="remember-id">
+                    <input type="checkbox" id="remember-id">아이디 저장
+                    </label>
+                    <button type="submit" class="login submit">로그인</button>
+                    <br><br><br>
+                    <div class="signup">CAMP<span style="color: rgb(255, 142, 29);">404</span>가 처음이신가요? <a href="#">회원가입</a></div>
+                </form>
+        </div>
+    </main>
+    <!-- jQuery 라이브러리 추가 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            var include1 = $('[data-include1="header"]');
+            jQuery.each(include1,function(){
+                $(this).load('/프론트단/헤더초안/header.html');
+            });
+        });
+
+    </script>
 </body>
 </html>
