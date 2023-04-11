@@ -5,17 +5,15 @@ const loginArea = $('.loginArea');
 const closeSearch = $('.closeSearch');
 const searchSubMenu = $('.searchSubMenu');
 const body = $('body');
+const searchItems = $('.searchItems');
 
 
 // 검색창 클릭 시 가운데 이동 및 사이즈 변경
 searchBar.on('click', function () {
     if (searchBarWrapper.hasClass('searchBarMiddle') === false) {
         subMenu.slideUp('fast');
-        searchBar.removeClass('searchBarWiderRemove');
-        searchBarWrapper.removeClass('searchBarMiddleRemove');
         body.removeClass('bodyBGColor');
 
-        searchBar.addClass('searchBarWider');
         searchBarWrapper.addClass('searchBarMiddle');
         body.addClass('bodyBGColor');
     } else {
@@ -57,25 +55,19 @@ closeSearch.on('click', function () {
         closeSearch.addClass('closeSearchHide');
         searchSubMenu.addClass('searchSubMenu_Hide');
 
-        searchBar.addClass('searchBarWiderRemove');
-        searchBarWrapper.addClass('searchBarMiddleRemove');
-        searchBar.removeClass('searchBarWider');
         searchBarWrapper.removeClass('searchBarMiddle');
         body.removeClass('bodyBGColor');
     } else {
         return false;
     }
 });
-searchBar.on('blur', function () {
+searchBar.on('focusout', function () {
     if (searchBarWrapper.hasClass('searchBarMiddle') === true) {
         console.log('검색창 닫기 버튼 누름');
         loginArea.removeClass('loginAreaHide');
         closeSearch.addClass('closeSearchHide');
         searchSubMenu.addClass('searchSubMenu_Hide');
 
-        searchBar.addClass('searchBarWiderRemove');
-        searchBarWrapper.addClass('searchBarMiddleRemove');
-        searchBar.removeClass('searchBarWider');
         searchBarWrapper.removeClass('searchBarMiddle');
         body.removeClass('bodyBGColor');
     } else {
@@ -83,6 +75,10 @@ searchBar.on('blur', function () {
     }
 });
 
+// 검색창 눌렀을 떄 내부 이벤트 고정
+searchSubMenu.on('mousedown', function (e) {
+    e.preventDefault();
+});
 
 
 
