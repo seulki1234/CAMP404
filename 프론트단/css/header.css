@@ -94,6 +94,8 @@ header {
     background-color: white;
     padding: 0 15px;
     border-radius: 50px;
+    width: 280px;
+    transition: all 0.2s ease-in-out;
 }
 
 /* 돋보기 아이콘 */
@@ -110,6 +112,7 @@ header {
     min-width: 220px;
     min-height: 35px;
     color: black;
+    width: 100%;
 }
 
 /* 검색창 input placeholder 색상 */
@@ -135,27 +138,20 @@ header {
 
 /* JS에서 사용. 검색창 위치 가운데 정렬 */
 .searchBarMiddle {
-    transition-property: all;
-    -webkit-transform: translateX(200px);
+    -webkit-transform: translateX(250px);
     -webkit-transition-timing-function: linear;
-    transition: 1s;
+    width: 400px;
 }
 
-.searchBarMiddleRemove {
-    transition-property: all;
-    -webkit-transform: translateX(0px);
-    -webkit-transition-timing-function: linear;
-    transition: 1s;
-}
 
 /* JS에서 사용. 검색창 크기 변경 */
-.searchBarWider {
+/* .searchBarWider {
     width: 400px;
 }
 
 .searchBarWiderRemove {
     width: -400px;
-}
+} */
 
 .searchSubMenu {
     position: absolute;
