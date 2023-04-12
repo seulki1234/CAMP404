@@ -1,0 +1,160 @@
+/* 레이아웃 틀*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin : 0;
+
+    font-family: 'Note Sans' , Helvetica, sans-serif;
+    /* width : 1140px;
+    margin : auto; */
+    display: flex;
+    justify-content: center;
+
+    margin: auto, 0;
+
+    margin-top : 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+
+#content{
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+   
+    border : solid 1px rgb(211, 208, 208);
+    border-radius : 20px;
+
+    height: 100%;
+
+    width: 460px;
+
+    padding : 40px;
+
+}
+
+
+#content > h2{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #487aff};
+
+
+
+
+
+
+
+/*이름, 아이디,,,,*/
+h3{
+    margin :20px 0 8px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* inputbox 둘러싼 */
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    border: none ;
+    padding : 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background-color: #F8F8F8;
+    /* position : relative; */
+}
+
+/* inputbox 해당 */
+.int{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border :none;
+
+    background-color: #F8F8F8;
+    font-size: 15px;
+}
+
+
+
+#bir_wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#bir_yy, #bir_mm, #bir_dd {
+    flex-direction: row;
+    width: 150px;
+    padding-right: 10px;
+}
+
+/*입력폼*/
+
+.int:focus{
+    outline : none; 
+ }
+
+
+
+/*에러메세지*/
+.error_next_box{
+    margin-top: 9px;
+    font-size: 12px;
+    color : red;
+    display: none;
+}
+
+#alertTxt{
+    position: absolute;
+    top : 19px;
+    right: 38px;
+    font-size: 12px;
+    color : red;
+    display: none;
+}
+
+/*버튼*/
+
+.btn_area{
+    margin: 30px 0 30px;
+}
+
+#btnJoin{
+    width : 100%;
+    box-sizing: border-box;
+    
+    margin : 30px 0 0 0;
+    padding: 21px 0 17px;
+    
+    border: 0;
+    cursor: pointer;
+
+    color : #fff;
+    background-color: #595e63;
+
+    font-size : 20px;
+    font-weight: bold;
+    font-family: 'Note Sans' , Helvetica, sans-serif;   
+}
+
+#btnJoin:hover{
+    background: #487aff;
+    border-color: #487aff;
+}
+
+#btnJoin{ transition-duration: 1s; }
+  
