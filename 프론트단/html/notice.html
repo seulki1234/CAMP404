@@ -11,29 +11,35 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/프론트단/css/notice.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
+    <div data-include1="header" id="header"></div>
     <main>
-        <div data-include1="header" id="header"></div>
+       
 
         
 <section class="notice">
     <div class="page-title">
-          <div class="container">
+          
               <img src="/프론트단/로고/CAMP404(가로).png" alt="">
-          </div>
+          
       </div>
   
       <!-- board seach area -->
-      <div id="board-search">
-          <div class="container">
-            
-              <div class="search-window">
-                <div class="notice">공지사항</div>
+      <div class="board">
+          <div class="container1">
+            <h3>공지사항</h3>
+          </div>
+          <div class="nothing"></div>
+
+          <div class="container2">
+              <div class="search-area">
+                
                   <form action="">
                     <fieldset>
                         <input type="text" id="query" name="query" 
-                            placeholder="원하는 강의를 검색해보세요">
+                            placeholder="검색어를 입력해주세요">
                         
                         <!-- 검색 버튼 -->
                         <button type="submit" id="search-btn" class="fa-solid fa-magnifying-glass"></button>
@@ -41,11 +47,13 @@
                   </form>
               </div>
           </div>
-      </div>
+          </div>
+        </div>
+     
      
     <!-- board list area -->
       <div id="board-list">
-          <div class="container">
+          <div class="container3">
               <table class="board-table">
                   <thead>
                   <tr>
@@ -83,6 +91,7 @@
   </section>
 
     </main>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
