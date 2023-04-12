@@ -220,6 +220,7 @@ header {
 .loginArea {
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .loginArea:hover {
