@@ -31,12 +31,13 @@
               <div class="search-window">
                 <div class="notice">공지사항</div>
                   <form action="">
-                      <div class="search-wrap">
-                          <label for="search" class="blind">공지사항 내용 검색</label>
-                          <button type="submit" class="fa-solid fa-magnifying-glass"></button><input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
-                          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-                          
-                      </div>
+                    <fieldset>
+                        <input type="text" id="query" name="query" 
+                            placeholder="원하는 강의를 검색해보세요">
+                        
+                        <!-- 검색 버튼 -->
+                        <button type="submit" id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                    </fieldset>
                   </form>
               </div>
           </div>
