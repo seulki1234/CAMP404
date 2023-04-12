@@ -10,9 +10,12 @@
     <script src="/프론트단/js/login.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <div data-include1="header" id="header"></div>
+    </header>
 
     <main>
-        <div data-include1="header" id="header"></div>
+        
 
     <div class="login-container">
         
@@ -25,7 +28,7 @@
                     </label>
                     <button type="submit" class="login submit">로그인</button>
                     <br><br><br>
-                    <div class="signup">CAMP<span style="color: rgb(255, 142, 29);">404</span>가 처음이신가요? <a href="#">회원가입</a></div>
+                    <div class="signup">CAMP<span style="color: rgb(255, 142, 29);">404</span>가 처음이신가요? <a href="/프론트단/html/signUp.html">회원가입</a></div>
                 </form>
         </div>
     </main>
@@ -37,7 +40,7 @@
         $(function(){
             var include1 = $('[data-include1="header"]');
             jQuery.each(include1,function(){
-                $(this).load('/프론트단/헤더초안/header.html');
+                $(this).load('/프론트단/html/header.html');
             });
         });
 
