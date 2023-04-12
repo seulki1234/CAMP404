@@ -3,10 +3,11 @@
     font-family: 'NotoSans';
     src : url('/프론트단/폰트/NotoSans-Regular.ttf')
  }
-*{
-    padding: 0;
-    margin: 0;
-    border: none;
+
+.main{
+    height: auto;
+    min-height: 100%;
+    width: 100vw;
 }
 *:focus{
     outline: 0;
@@ -21,7 +22,7 @@ body{
     flex-direction: column;
     width: 500px;
     height: 450px;
-    padding: 40px;
+    
     box-sizing: border-box;
     position: absolute;
     left:50%;
