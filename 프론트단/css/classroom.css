@@ -2,9 +2,6 @@
     box-sizing: border-box;
 }
 
-body{
-    margin : 0px;
-}
 
 @font-face {
     /* 영어, 숫자, 특수문자 => Helvetica */
@@ -152,6 +149,7 @@ header {
 /* .searchBarWider {
     width: 400px;
 }
+
 .searchBarWiderRemove {
     width: -400px;
 } */
@@ -368,8 +366,9 @@ a{
 .classroom{
     display: flex;
     flex-direction: row;
-    width : 100%;
+    width : 100vw;
     height: 830px;
+
 }
 
 .classroom_viewport {
@@ -402,11 +401,7 @@ a{
     padding : 10px;
     
 }
-.classroom_tabs >li > a {
-    font-size: 15px;
-    font-weight: bold;
 
-}
 
 
 
@@ -417,19 +412,19 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding : 10px;
+    padding : 0 10px 0 0;
     margin: 0;
 }
 
 .big_title > :nth-child(1){
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   padding : 0 20px 0 0;
  
 }
 
 .big_title > :nth-child(2){
-    font-size: 15px;   
+    font-size: 13px;   
   }
 
 
@@ -450,8 +445,6 @@ a{
 }
 
 
-
-/*class1*/
 .classroom_chater_item {
     background-color: rgb(75, 74, 74);
     border-radius: 5px;
@@ -471,10 +464,52 @@ a{
 
 /*class 1-4 아래 title*/
 .title > :nth-child(2) {
-    font-size : 24px;
+    font-size : 20px;
     color : white;
+    font-weight: 550;
+}
+.title > div > i {
+    margin : 2px 0 0 0 ;
+    color : white;
+    font-size: 12px;
 }
 
+
+
+/*click 시 작동하는 아코디언부분*/
+
+.hiddenMenu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(75, 74, 74);
+    border-radius: 5px;
+    color : white;
+    
+    margin : 10px;
+    padding : 10px;
+
+}
+
+
+.hiddenMenu li {
+    list-style: none;
+    
+}
+
+.class_items {
+    color : rgb(138, 136, 136) ;
+    font-size: 12px;
+    font-weight: normal;
+    margin : 0;
+}
+
+.hiddenMenu hr {
+    background: rgb(138, 136, 136);
+    height:0.5px;
+    border:0;
+}
 
 
 

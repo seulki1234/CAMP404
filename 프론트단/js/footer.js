@@ -1,22 +1,13 @@
-const button = document.querySelector('.button');
-const footer_logo_button = document.querySelector('.footer_logo_button');
-const footerMenu = document.querySelector('.footer_logo_button_menu');
-
-
+const button = $('.button');
+const button_a = $('.button_a');
+const hiddenMenu = $('.hiddenMenu');
 
 
 button.on('mouseover', function () {
-    footerMenu.slideDown('fast');
+    hiddenMenu.slideDown('fast');
 });
-
-
-// footer_logo_button.on('mouseover', function () {
-//     footerMenu.slideDown('fast');
-// });
-
 
 // 메뉴창 떠날 떄 슬라이드 업
-footerMenu.on('mouseleave', function () {
-    footerMenu.slideUp('fast');
+hiddenMenu.on('mouseleave', function () {
+    hiddenMenu.slideUp('fast');
 });
-

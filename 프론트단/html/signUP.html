@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+
+ 
+    
+    <!--content-->
+    <div id="content">
+        <h2>E-LEARNING</h2>
+
+        <!--이름-->
+        
+        <form method="post" id="signUp-form" autocomplete="off" >
+        <div>
+            <h3 class="join_title">
+                <label for="name">이름</label>
+            </h3>
+           
+            <span class="box int_name">
+                <input type="text" id="name" class="int" maxlength="20" placeholder="이름을 입력해주세요">
+            </span>
+
+            <span class="error_next_box"></span>
+
+        </div>
+
+
+
+        <!--ID-->
+        <div>
+            <h3 class="join_title">
+                <label for="id">아이디</label>
+            </h3>
+
+            <span class="box int_id">
+                <input type="text" id="id" class="int" maxlength="20" placeholder="아이디를 입력해주세요">
+            </span>
+
+            <span class="error_next_box">아이디를 입력해주세요</span>
+        </div>
+
+
+        <!--이메일-->
+        <div>
+            <h3 class="join_title">
+                <label for="email">본인확인 이메일</label>
+            </h3>
+
+            <span class="box int_email">
+                <input type="text" id="email" class="int" maxlength="50" placeholder="본인 확인용 인증 이메일을 입력해주세요" >
+            </span>
+
+            <span class="error_next_box">이메일 주소를 다시 확인해주세요</span>
+        </div>
+
+        <!--이메일 인증번호-->
+        <div>
+            <h3 class="join_title">
+                <label for="cNumber">인증번호</label>
+            </h3>
+
+            <span class="box int_cNumber">
+                <input type="text" id="cNumber" class="int" maxlength="20" placeholder="인증번호를 입력해주세요">
+            </span>
+            <span class="error_next_box"></span>
+        </div>
+
+
+
+
+
+        <!--닉네임-->
+        <div>
+            <h3 class="join_title">
+                <label for ="nickNAme">닉네임</label>
+            </h3>
+
+            <span class="box int_nickNAme">
+                <input type="text" id="nickNAme" class="int" maxlength="20" placeholder="닉네임을 입력해주세요">
+            </span>
+            <span class="error_next_box"></span>
+        </div>
+
+
+
+        <!--PW1-->
+        <div>
+            <h3 class="join_title">
+                <label for ="pw1">비밀번호</label>
+            </h3>
+
+            <span class="box int_pass">
+                <input type="password" id="pswd1" class="int" maxlength="20" placeholder="비밀번호를 입력해주세요">
+            </span>
+            <span class="error_next_box"></span>
+        </div>
+
+        <!--PW2-->
+        <div>
+            <h3 class="join_title">
+                <label for ="pw1">비밀번호 재확인</label>
+            </h3>
+
+            <span class="box int_pass_check">
+                <input type="password" id="pswd2" class="int" maxlength="20" placeholder="비밀번호 재확인용 입력해주세요">
+            </span>
+            <span class="error_next_box"></span>
+        </div>
+
+
+        <!--생년월일-->
+        <div>
+            <h3 class="join_title">
+                <label for ="yy">생년월일</label>
+            </h3>
+
+            <div id="bir_wrap">
+                <!--birth_yy-->
+                <div id="bir_yy">
+                    <span class="box">
+                        <input type="text" id="yy" class="int" maxlength="4" placeholder="YYYY">
+                    </span>
+                </div>
+
+
+                <!--birth_mm-->
+                <div id="bir_mm">
+                    <span class="box">
+                        <input type="text" id="mm" class="int" maxlength="2" placeholder="MM">
+                    </span>
+                </div>
+
+
+                <!--birth_dd-->
+                <div id="bir_dd">
+                    <span class="box">
+                        <input type="text" id="dd" class="int" maxlength="2" placeholder="DD">
+                    </span>
+                </div>
+            </div>
+            <span class="error_next_box"></span>
+        </div>
+
+
+
+        <!--전화번호-->
+        <div>
+            <h3 class="join_title">
+                <label for ="phoneNo">휴대전화번호</label>
+            </h3>
+
+            <span class="box int_mobile">
+                <input type="tel" id="mobile" class="int" maxlength="20" placeholder="휴대전화를 입력해주세요">
+            </span>
+            <span class="error_next_box"></span>
+        </div>
+
+
+
+        <!--주소-->
+        <div>
+            <h3 class="join_title">
+                <label for ="address">주소</label>
+            </h3>
+
+            <span class="box int_address">
+                <input type="text" id="address" class="int" maxlength="20" placeholder="주소를 입력해주세요">
+            </span>
+            <span class="error_next_box"></span>
+        </div>
+
+        <!--join Btn-->
+        <div class="btn_area">
+            <button type="button" id="btnJoin">
+                <span>SIGN UP</span>
+            </button>
+         </div> 
+
+
+
+
+    </form>
+
+    </div>   <!-- content-->
+
+
+        
+    <script src="signUp.js"></script>
+        
+    <!--
+회원가입 필요기능
+=> 이름
+=> 아이디(중복검사 & 형식유효한지 메시지 칸 필요)
+=> 이메일(인증하기버튼 & 형식유효한지 메시지 칸 필요)
+=> 이메일 인증번호(인증번호 유효한지 메시지칸 & 시간제한 필요)
+=> 닉네임(중복검사 & 형식 유효메시지칸필요)
+=> 전화번호(중복검사 & 형식 유효메시지칸필요)
+=> 주소
+-->
+
+
+    
+</body>
+</html>
