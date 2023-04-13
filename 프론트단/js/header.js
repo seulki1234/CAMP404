@@ -88,14 +88,27 @@ searchSubMenu.on('mousedown', function (e) {
 const catLeftWrapper = $('.catLeftWrapper');
 const subMenu = $('.subMenu');
 
+let flag = false;
+
 // 메뉴창 들어갈 때 슬라이드 다운
 catLeftWrapper.on('mouseover', function () {
-    subMenu.slideDown('fast');
+    if (!flag) subMenu.slideDown('fast');
+    flag = true;
 });
 
 // 메뉴창 떠날 떄 슬라이드 업
 subMenu.on('mouseleave', function () {
     subMenu.slideUp('fast');
 });
+
+catLeftWrapper.on('mouseleave', function () {
+    flag = false;
+});
+
+// 메뉴창 떠날 떄 슬라이드 업
+catLeftWrapper.on('click', function () {
+    subMenu.slideUp('fast');
+});
+
 
 

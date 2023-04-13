@@ -3,6 +3,324 @@
 }
 
 body {
-    height: 100px;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 1100px;
+    height: 100%;
+}
+
+.SlideImageContainer {
+    border: 1px solid black;
+    width: inherit;
+    min-height: 400px;
+}
+
+.infoArea {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    min-width: 1100px;
+    min-height: 300px;
+}
+
+.infoUp {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.infoBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 250px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: black;
+    text-decoration: none;
+}
+
+.innerUp {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.innerDown {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+.infoDown {
+    flex: 5;
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.infoDown1 {
+    flex: 4;
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    border-right: 2px solid #aaa;
+}
+
+/* 가입 회원 수 */
+.aDown1 {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18px;
+    padding-left: 25px;
+    color: #717171;
+}
+
+.aDown2 {
+    flex: 7;
+    display: flex;
+    align-items: center;
+}
+
+/* 2,000 + */
+.aDown3 {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fe6936;
+    padding-left: 25px;
+}
+
+.aDown3>span:nth-child(2) {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.aDown4 {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-right: 20px;
+}
+
+/* 회원, 증가율 */
+.aDown5 {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 74px;
+    text-align: right;
+    color: rgb(130, 130, 130);
+    font-weight: bolder;
+}
+
+.aDown5>div:first-child {
+    margin-bottom: 10px;
+}
+
+/* 120% */
+.aDown6 {
+    flex: 7;
+    margin-left: 10px;
+    font-size: 60px;
+    color: rgb(130, 130, 130);
+}
+
+.infoDown2 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    border-right: 2px solid #aaa;
+}
+
+/* 오픈된 클래스 */
+.bDown1 {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18px;
+    padding-left: 25px;
+    color: rgb(130, 130, 130);
+}
+
+/* 600+ */
+.bDown2 {
+    flex: 7;
+    flex: 5;
+    display: flex;
+    align-items: center;
+    font-size: 72px;
+    font-weight: bold;
+    color: rgb(130, 130, 130);
+    padding-left: 25px;
+}
+
+.bDown3 {
+    display: flex;
+    align-items: center;
+}
+
+.bDown5 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.infoDown3 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.classWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.classTitle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    color: #fe6936;
+}
+
+.classTitle>span:nth-child(1) {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.classDescription {
+    flex: 8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.classItem {
+    width: 330px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.classItem:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    margin-bottom: 20px;
+    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+.imgArea {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgArea>img {
+    border-radius: 15px 15px 0 0;
+}
+
+.textArea {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    background-color: #fe6936;
+    border-radius: 0 0 15px 15px;
+    padding: 20px 15px;
+}
+
+.topText {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.mainText {
+    flex: 7;
+    font-size: 12px;
+}
+
+.mainText1 {
+    padding: 1px 10px;
+    background-color: white;
+    color: #fe6936;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.mainText2 {
+    padding: 1px 10px;
+    border: 2px solid white;
+    background-color: #fe6936;
+    color: white;
+    border-radius: 50px;
+}
+
+.likeBtn {
+    flex: 3;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.likeBtn>i {
+    cursor: pointer;
+}
+
+.subText {
+    width: 300px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.tutorTitle {
+    font-size: 12px;
+    color: white;
 }
