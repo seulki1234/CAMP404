@@ -1,13 +1,12 @@
 const button = $('.button');
-const button_a = $('.button_a');
-const hiddenMenu = $('.hiddenMenu');
+const menu = $('.menu');
 
 
 button.on('mouseover', function () {
-    hiddenMenu.slideDown('fast');
+    menu.slideDown('fast');
 });
 
 // 메뉴창 떠날 떄 슬라이드 업
-hiddenMenu.on('mouseleave', function () {
-    hiddenMenu.slideUp('fast');
+menu.on('mouseleave', function () {
+    menu.slideUp('fast');
 });
