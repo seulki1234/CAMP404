@@ -5,96 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+
+    <link rel="stylesheet" href="../css/reset.css" >
+    
+    <!--폰트-->
+    <script src="https://kit.fontawesome.com/606ab3dc62.js" crossorigin="anonymous"></script>
+    <!--제이쿼리-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 
- 
+ <!--content-->
+<div id="content">
+    <!--로고-->
+    <div class="img_class"><img src="../로고/CAMP404(기본).png" ></div>
     
-    <!--content-->
-    <div id="content">
-        <h2>E-LEARNING</h2>
-
-        <!--이름-->
-        
-        <form method="post" id="signUp-form" autocomplete="off" >
-        <div>
-            <h3 class="join_title">
-                <label for="name">이름</label>
-            </h3>
+    <form method="post" id="signUp-form" autocomplete="off" >
+    
+    <!--이름-->
+    <div class="test">
+        <!-- <h3 class="join_title">
+            <label for="name">이름</label>
+        </h3> -->
            
-            <span class="box int_name">
-                <input type="text" id="name" class="int" maxlength="20" placeholder="이름을 입력해주세요">
-            </span>
+        <div class="box int_name">
+            <input type="text" id="name" class="int" maxlength="20" placeholder="이름을 입력해주세요">
+        </div>
 
-            <span class="error_next_box"></span>
+        <div class="error_next_box"></span>
+    </div>
 
+    <!--ID-->
+    <div class="test">
+         <!-- <h3 class="join_title">
+            <label for="id">아이디</label>
+        </h3> -->
+
+        <div class="box int_id">
+            <input type="text" id="id" class="int" maxlength="20" placeholder="아이디를 입력해주세요">
+        </div>
+
+            <div class="error_next_box">아이디를 입력해주세요</span>
         </div>
 
 
+    <!--이메일-->
+    <div>
+        <!-- <h3 class="join_title">
+            <label for="email">본인확인 이메일</label>
+        </h3> -->
 
-        <!--ID-->
-        <div>
-            <h3 class="join_title">
-                <label for="id">아이디</label>
-            </h3>
+        <span class="box int_email">
+            <input type="text" id="email" class="int" maxlength="50" placeholder="본인 확인용 인증 이메일을 입력해주세요" >
+        </span>
 
-            <span class="box int_id">
-                <input type="text" id="id" class="int" maxlength="20" placeholder="아이디를 입력해주세요">
-            </span>
+        <span class="error_next_box">이메일 주소를 다시 확인해주세요</span>
+    </div>
 
-            <span class="error_next_box">아이디를 입력해주세요</span>
-        </div>
+    <!--이메일 인증번호-->
+    <div>
+        <!-- <h3 class="join_title">
+            <label for="cNumber">인증번호</label>
+        </h3> -->
 
-
-        <!--이메일-->
-        <div>
-            <h3 class="join_title">
-                <label for="email">본인확인 이메일</label>
-            </h3>
-
-            <span class="box int_email">
-                <input type="text" id="email" class="int" maxlength="50" placeholder="본인 확인용 인증 이메일을 입력해주세요" >
-            </span>
-
-            <span class="error_next_box">이메일 주소를 다시 확인해주세요</span>
-        </div>
-
-        <!--이메일 인증번호-->
-        <div>
-            <h3 class="join_title">
-                <label for="cNumber">인증번호</label>
-            </h3>
-
-            <span class="box int_cNumber">
-                <input type="text" id="cNumber" class="int" maxlength="20" placeholder="인증번호를 입력해주세요">
-            </span>
-            <span class="error_next_box"></span>
-        </div>
+        <span class="box int_cNumber">
+            <input type="text" id="cNumber" class="int" maxlength="20" placeholder="인증번호를 입력해주세요">
+        </span>
+        
+        <span class="error_next_box"></span>
+    </div>
 
 
 
 
 
-        <!--닉네임-->
-        <div>
-            <h3 class="join_title">
+<!--닉네임-->
+    <div>
+            <!-- <h3 class="join_title">
                 <label for ="nickNAme">닉네임</label>
-            </h3>
+            </h3> -->
 
-            <span class="box int_nickNAme">
-                <input type="text" id="nickNAme" class="int" maxlength="20" placeholder="닉네임을 입력해주세요">
-            </span>
-            <span class="error_next_box"></span>
-        </div>
+        <span class="box int_nickNAme">
+            <input type="text" id="nickNAme" class="int" maxlength="20" placeholder="닉네임을 입력해주세요">
+        </span>
+            
+        <span class="error_next_box"></span>
+    </div>
 
 
 
-        <!--PW1-->
-        <div>
-            <h3 class="join_title">
+<!--PW1-->
+    <div>
+        <!-- <h3 class="join_title">
                 <label for ="pw1">비밀번호</label>
-            </h3>
+            </h3> -->
 
             <span class="box int_pass">
                 <input type="password" id="pswd1" class="int" maxlength="20" placeholder="비밀번호를 입력해주세요">
@@ -104,9 +112,9 @@
 
         <!--PW2-->
         <div>
-            <h3 class="join_title">
+            <!-- <h3 class="join_title">
                 <label for ="pw1">비밀번호 재확인</label>
-            </h3>
+            </h3> -->
 
             <span class="box int_pass_check">
                 <input type="password" id="pswd2" class="int" maxlength="20" placeholder="비밀번호 재확인용 입력해주세요">
@@ -117,9 +125,9 @@
 
         <!--생년월일-->
         <div>
-            <h3 class="join_title">
+            <!-- <h3 class="join_title">
                 <label for ="yy">생년월일</label>
-            </h3>
+            </h3> -->
 
             <div id="bir_wrap">
                 <!--birth_yy-->
@@ -152,9 +160,9 @@
 
         <!--전화번호-->
         <div>
-            <h3 class="join_title">
+            <!-- <h3 class="join_title">
                 <label for ="phoneNo">휴대전화번호</label>
-            </h3>
+            </h3> -->
 
             <span class="box int_mobile">
                 <input type="tel" id="mobile" class="int" maxlength="20" placeholder="휴대전화를 입력해주세요">
@@ -166,9 +174,9 @@
 
         <!--주소-->
         <div>
-            <h3 class="join_title">
+            <!-- <h3 class="join_title">
                 <label for ="address">주소</label>
-            </h3>
+            </h3> -->
 
             <span class="box int_address">
                 <input type="text" id="address" class="int" maxlength="20" placeholder="주소를 입력해주세요">
@@ -205,7 +213,6 @@
 => 주소
 -->
 
-
-    
+  
 </body>
 </html>
