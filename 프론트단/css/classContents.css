@@ -7,7 +7,6 @@
 
 .bodyContainer {
     width: 100%;
-
     display: flex;
     flex-direction: row;
 }
@@ -19,27 +18,32 @@
     background-color: #e1e1e1;
 }
 
-/* <nav> 안녕하세요. 김철수님 */
+/* <nav> 안녕하세요. 김철수님 [전체] */
 .summary-Container {
     width: 40%;
     height: 780px;
     margin-left: 50px;
 }
+/* 안녕하세요. ~님 글자 영역 */
 .hiUser {
     width: 300%;
     padding-top: 100px;
     padding-bottom: 50px;
-    font-family: 'Source Sans Pro', sans-serif;
 
-    /*안녕하세요 * 님 폰트 크기, 행간 조절*/
-    line-height: 38px;
+    /*font */
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
-    font-weight: 450;
+    font-weight: 700;
+    color:#333333;
+    /*안녕하세요 * 님 폰트 크기, 행간 조절*/
+    letter-spacing: -0.5px;
+    line-height: 37px;
 }
 
 /*가명: 김철수님*/
 .userName {
-    font-weight: 800;
+    color: #fe6936;
+    font-weight: 700;
     font-size: 30px;
 }
 
@@ -49,22 +53,26 @@
     height: 1000px;
     margin-left: 100px;
 }
+/* 버튼영역 */
 .content-1 {
     width: 200%;
     height: 60px;
 
     background-color: #333333;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
 
     display: flex;
     align-items: center;
     padding-left: 15px;
 
     cursor: pointer;
-
-    
 }
+.content-1:hover{
+    background-color:#fe6936;
+    font-weight: bolder;
+}
+
 .content-1>a {
     color: white;
     text-decoration: none;
@@ -104,22 +112,22 @@
     
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    align-items: center;
+    margin-top: 120px;
     margin-bottom: 60px;
-
-    
 }
+/* 전체목록, 수강중, 수강완료 버튼 안쪽 영역 */
 .class-btnpart>span {
     height: 80%;
     font-size: 16px;
     border-radius: 50px;
-    background-color: #e0e0e0;
-    color: #818181;
-    font-weight: 500;
+    background-color: #eeeeee;
+    color: rgb(188, 188, 188);
+    font-weight: 450;
     font-family: 'Source Sans Pro', sans-serif;
 
-    margin-right: 10px;
-    padding: 10px 15px 9px 15px;
+    margin-right: 8px;
+    padding: 3px 10px 3px 10px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -128,15 +136,21 @@
     flex: none;
 }
 
+.class-btn:hover{
+    background-color: #fe6936;
+    font-weight: bolder;
+    color: white;
+}
+
 /* 나의강의찾기 input부분 */
 .mySearchBarWrapper{
     border: 1px solid #e0e0e0;
     border-radius: 50px;
     
-    padding-left: 10px;
+    padding-left: 5px;
     font-size: 16px;
     height: 36px;
-    margin-left: 320px;
+    margin-left: 380px;
     font-family: 'Source Sans Pro', sans-serif;
 
     display: flex;
@@ -146,24 +160,32 @@
     color:  #e0e0e0;
 }
 
+
+
 /*class-content-1 / 강의 목록 */
 .class-contentpart{
     width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 50%;
 }
 .class-content{
     width: 85%;
-    height: 300px;
+    /* height: 90%; */
     background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  
 }
 #class-content-1{
     width: 30%;
-    height: 80%;
-    background-color: #fe6936;
+    height: 95%;
+    border: 1.5px solid #cecece;
+    /* background-color: #fe6936; */
     border-radius: 30px;
     overflow: hidden;
 }
@@ -171,20 +193,59 @@
 .class1 > img {
     width: 100%;
     height: 60%;
-    object-fit: cover; top: 0; left: 0;
+    /* object-fit: cover; top: 0; left: 0; */
     background-size: contain;
 }
 .class2 > img {
     width: 100%;
     height: 60%;
-    object-fit: cover; top: 0; left: 0;
+    /* object-fit: cover; top: 0; left: 0; */
     background-size: contain;
 }
 .class3 > img {
     width: 100%;
     height: 60%;
-    object-fit: cover;
+    /* object-fit: cover; */
     background-size: contain;
+
+    top:0;
 }
 
 /* 강의구분div */
+.class-index{
+    width: 90%;
+    height: 10%;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+/* 나의 강의: 강의구분[JAVA] */
+.class-index > span{
+    width: 20%;
+    border-radius: 50px;
+    padding: 1% 4% 1% 3%;
+    background-color: #cecece; 
+    margin-bottom: 5px;  
+    /* font */
+    font-size: 12px;
+    font-weight: 550;
+    color: white;
+}
+.class-index-content {
+    width: 100%;
+    height: 30%;
+    padding-left: 3px;
+    margin-top:9px;
+
+    /* font */
+    font-size: 0.88rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333333;
+    line-height: 18px;
+    font-weight: 470;
+}
+
+.class-index-content:hover{
+    color: #fe6936;
+    font-weight: 600;
+}
