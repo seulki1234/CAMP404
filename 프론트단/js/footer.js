@@ -1,6 +1,6 @@
-const button = $('.button');
-const footer_logo_button = $('.footer_logo_button');
-const footerMenu = $('.footer_logo_button_menu');
+const button = document.querySelector('.button');
+const footer_logo_button = document.querySelector('.footer_logo_button');
+const footerMenu = document.querySelector('.footer_logo_button_menu');
 
 
 
