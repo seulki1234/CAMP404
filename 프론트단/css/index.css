@@ -23,11 +23,12 @@ main {
     height: 100%;
 }
 
+/* ====================================================================== */
 .setSlideArea {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    background-color: #fbda96;
+    width: calc(100vw - 16.5px);
+    background-color: #1e1e1e;
     margin-bottom: 40px;
     /* background-image: */
     /* 오른쪽 -> 왼쪽 */
@@ -45,7 +46,7 @@ main {
 .slideBtn {
     position: absolute;
     margin: 0 auto;
-    z-index: 11;
+    z-index: 1;
     width: auto;
     display: flex;
     color: white;
@@ -95,6 +96,7 @@ main {
     height: 100%;
     border: none;
     outline: none;
+    -webkit-user-drag: none;
 }
 
 .slideTitle {
@@ -109,19 +111,77 @@ main {
 .slideTitle>span {
     display: flex;
     margin-bottom: 15px;
+}
+
+/* 1번 슬라이드 */
+.slideTitle1-1 {
+    margin-left: 5px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.slideTitle1-2 {
+    font-size: 36px;
+    font-weight: bold;
     color: white;
 }
 
-.slideTitle1 {
+.slideTitle1-3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+
+/* 2번 슬라이드 */
+.slideTitle2-1 {
     margin-left: 5px;
 }
 
-.slideTitle2 {
+.slideTitle2-2 {
     font-size: 36px;
     font-weight: bold;
 }
 
-.slideTitle3 {
+.slideTitle2-3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+/* 3번 슬라이드 */
+.slideTitle3-1 {
+    margin-left: 5px;
+    color: white;
+}
+
+.slideTitle3-2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.slideTitle3-3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* 4번 슬라이드 */
+.slideTitle4-1 {
+    margin-left: 5px;
+}
+
+.slideTitle4-2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.slideTitle4-3 {
     font-size: 36px;
     font-weight: bold;
 }
@@ -420,9 +480,17 @@ main {
     cursor: pointer;
 }
 
+.likeBtn>i:active {
+    outline: white;
+}
+
+.likeColor {
+    color: red;
+}
+
 .subText {
     width: 300px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
     margin-bottom: 10px;
