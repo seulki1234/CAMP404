@@ -8,10 +8,17 @@
     <title>Document</title>   
     <link rel="stylesheet" href="/css/login.css">
     <script src="/js/login.js" crossorigin="anonymous"></script>
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+
+
 </head>
 <body>
     <header>
         <div data-include1="header" id="header"></div>
+        
     </header>
 
     <main>
@@ -31,8 +38,9 @@
                     <div class="signup">CAMP<span style="color: rgb(255, 142, 29);">404</span>가 처음이신가요? <a href="/html/signUp.html">회원가입</a></div>
                 </form>
         </div>
+        
     </main>
-    
+   
     <!-- jQuery 라이브러리 추가 -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -44,9 +52,14 @@
             jQuery.each(include1,function(){
                 $(this).load('/html/header.html');
             });
+            jQuery.each(includeFooter,function(){
+                $(this).load('/html/footer.html');
+            })
           
         });
 
     </script>
+   
 </body>
+
 </html>
