@@ -53,7 +53,7 @@ function leftMove() {
 // 자동 슬라이드 기능 (내부 내용은 오른쪽 버튼 클릭과 같음.)
 function slide() {
     rightMove();
-    console.log("5초마다 슬라이드가 이동함");
+    console.log("5초마다 상단 슬라이드가 이동함");
 };
 
 let ci = setInterval(slide, 5000);
@@ -110,3 +110,206 @@ leftBtn.on('click', function () {
 likeBtn.on('click', function () {
     $(this).toggleClass('likeColor');
 });
+// =========================================================================
+// =========================================================================
+// =========================================================================
+// =========================================================================
+
+// 중간 광고 영역1
+
+const Middle_leftBtn = $('.Middle_leftBtn');
+const Middle_rightBtn = $('.Middle_rightBtn');
+const midde_SlideImgHolder = $('.midde_SlideImgHolder');
+const Middle_moveNum = $('.Middle_moveNum');
+const middleAddArea = $('.middleAddArea');
+
+let middle_num = 1100;
+let middle_screenMove = -1100;
+let middle_move = 1;
+let middle_colorChange = 0;
+
+function middle_rightMove() {
+    if (middle_screenMove > -3300) {
+        Middle_moveNum.text(++middle_move);
+        midde_SlideImgHolder.css('transform', 'translateX(' + middle_screenMove + 'px)');
+        middle_screenMove += (-middle_num);
+    } else {
+        middle_screenMove = 0;
+        middle_move = 1
+        midde_SlideImgHolder.css('transform', 'translateX(' + middle_screenMove + 'px)');
+        middle_screenMove = (-middle_num);
+        Middle_moveNum.text("1");
+    }
+};
+
+function middle_leftMove() {
+    if (middle_screenMove >= -1100) {
+        middle_move = 3
+        middle_screenMove = -3300;
+        midde_SlideImgHolder.css('transform', 'translateX(' + (middle_screenMove + (middle_num)) + 'px)');
+        Middle_moveNum.text("3");
+    } else {
+        Middle_moveNum.text(--middle_move);
+        midde_SlideImgHolder.css('transform', 'translateX(' + (middle_screenMove + (middle_num * 2)) + 'px)');
+        middle_screenMove += middle_num;
+    }
+};
+
+midde_SlideImgHolder.on("mousedown", (e) => {
+    console.log("mousedown", e.pageX);
+    startPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+});
+
+
+
+function middle_slide() {
+    middle_rightMove();
+    console.log("10초마다 광고 영역1 슬라이드가 이동함");
+};
+
+let mi = setInterval(middle_slide, 10000);
+
+Middle_rightBtn.on('click', function () {
+    middle_rightMove();
+    clearInterval(mi);
+    mi = setInterval(middle_slide, 10000);
+    console.log("오른쪽 버튼을 눌러서 초기화함");
+});
+
+Middle_leftBtn.on('click', function () {
+    middle_leftMove();
+    clearInterval(mi);
+    mi = setInterval(middle_slide, 10000);
+    console.log("왼쪽 버튼을 눌러서 초기화함");
+});
+
+// ==========================
+
+let middle_startPoint = 0;
+let middle_endPoint = 0;
+
+middleAddArea.on("mousedown", (e) => {
+    console.log("mousedown", e.pageX);
+    middle_startPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+});
+
+middleAddArea.on("mouseup", (e) => {
+    console.log("mouseup", e.pageX);
+    middle_endPoint = e.pageX; // 마우스 드래그 끝 위치 저장
+    if (middle_startPoint < middle_endPoint) {
+        // 마우스가 오른쪽으로 드래그 된 경우
+        console.log("prev move");
+        middle_leftMove();
+        clearInterval(mi);
+    } else if (middle_startPoint > middle_endPoint) {
+        // 마우스가 왼쪽으로 드래그 된 경우
+        console.log("next move");
+        middle_rightMove();
+    }
+    clearInterval(mi);
+    mi = setInterval(middle_slide, 10000);
+    console.log("인터벌을 초기화함");
+});
+// 중간 광고 영역1
+
+// =========================================================================
+// =========================================================================
+// =========================================================================
+// =========================================================================
+
+// 중간 광고 영역2
+
+const Middle_leftBtn2 = $('.Middle_leftBtn2');
+const Middle_rightBtn2 = $('.Middle_rightBtn2');
+const midde_SlideImgHolder2 = $('.midde_SlideImgHolder2');
+const Middle_moveNum2 = $('.Middle_moveNum2');
+const middleAddArea2 = $('.middleAddArea2');
+
+let middle_num2 = 1100;
+let middle_screenMove2 = -1100;
+let middle_move2 = 1;
+
+function middle_rightMove2() {
+    if (middle_screenMove2 > -3300) {
+        Middle_moveNum2.text(++middle_move2);
+        midde_SlideImgHolder2.css('transform', 'translateX(' + middle_screenMove2 + 'px)');
+        middle_screenMove2 += (-middle_num2);
+    } else {
+        middle_screenMove2 = 0;
+        middle_move2 = 1
+        midde_SlideImgHolder2.css('transform', 'translateX(' + middle_screenMove2 + 'px)');
+        middle_screenMove2 = (-middle_num2);
+        Middle_moveNum2.text("1");
+    }
+};
+
+function middle_leftMove2() {
+    if (middle_screenMove2 >= -1100) {
+        middle_move2 = 3
+        middle_screenMove2 = -3300;
+        midde_SlideImgHolder2.css('transform', 'translateX(' + (middle_screenMove2 + (middle_num2)) + 'px)');
+        Middle_moveNum2.text("3");
+    } else {
+        Middle_moveNum2.text(--middle_move2);
+        midde_SlideImgHolder2.css('transform', 'translateX(' + (middle_screenMove2 + (middle_num2 * 2)) + 'px)');
+        middle_screenMove2 += middle_num2;
+    }
+};
+
+midde_SlideImgHolder2.on("mousedown", (e) => {
+    console.log("mousedown", e.pageX);
+    startPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+});
+
+
+
+function middle_slide2() {
+    middle_rightMove2();
+    console.log("7초마다 광고 영역2 슬라이드가 이동함");
+};
+
+let mi2 = setInterval(middle_slide2, 7000);
+
+Middle_rightBtn2.on('click', function () {
+    middle_rightMove2();
+    clearInterval(mi2);
+    mi2 = setInterval(middle_slide2, 7000);
+    console.log("오른쪽 버튼을 눌러서 초기화함");
+});
+
+Middle_leftBtn2.on('click', function () {
+    middle_leftMove2();
+    clearInterval(mi2);
+    mi2 = setInterval(middle_slide2, 7000);
+    console.log("왼쪽 버튼을 눌러서 초기화함");
+});
+
+// ==========================
+
+let middle_startPoint2 = 0;
+let middle_endPoint2 = 0;
+
+middleAddArea2.on("mousedown", (e) => {
+    console.log("mousedown", e.pageX);
+    middle_startPoint2 = e.pageX; // 마우스 드래그 시작 위치 저장
+});
+
+middleAddArea2.on("mouseup", (e) => {
+    console.log("mouseup", e.pageX);
+    middle_endPoint2 = e.pageX; // 마우스 드래그 끝 위치 저장
+    if (middle_startPoint2 < middle_endPoint2) {
+        // 마우스가 오른쪽으로 드래그 된 경우
+        console.log("prev move");
+        middle_leftMove2();
+        clearInterval(mi2);
+    } else if (middle_startPoint2 > middle_endPoint2) {
+        // 마우스가 왼쪽으로 드래그 된 경우
+        console.log("next move");
+        middle_rightMove2();
+    }
+    clearInterval(mi2);
+    mi2 = setInterval(middle_slide2, 7000);
+    console.log("인터벌을 초기화함");
+});
+
+// 중간 광고 영역2
