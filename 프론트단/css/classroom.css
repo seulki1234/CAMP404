@@ -286,11 +286,12 @@ hr {
     border : none;
     color : white;
     font-size: 15px;
+    cursor: pointer;
 }
 
 
 .subArea{
-    /* display: flex; */
+    /* display: flaex; */
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -310,6 +311,13 @@ hr {
     border-radius: 5px;
 
 }
+.notewrite{
+    background-color:rgb(255, 142, 29);
+    color:white;border:solid 1px rgb(255, 142, 29);
+    border-radius:5px;
+    cursor: pointer;
+}
+
 
 
 
@@ -363,6 +371,7 @@ hr {
     justify-content: center;
     align-items: center;
     margin : 10px;
+   
 }
 
 .slideArea {

@@ -143,9 +143,7 @@ $('.subArea').hide();/*저장된 강의노트 목록 show */
           <span class="text1"></span>            
           <span class="change"><i class="fa-solid fa-check"></i></span>
           <span class="remove"><i class="fa-sharp fa-solid fa-trash"></i></span>
-          <button class="notewrite" style="background-color:rgb(255, 142, 29);
-          color:white;border:solid 1px rgb(255, 142, 29);
-           border-radius:5px;">글작성</button>
+          <button class="notewrite">글작성</button>
            
            
         
