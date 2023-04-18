@@ -253,3 +253,8 @@ p {
 .footer_content_down_right p {
     padding: 3px;
 }
+
+.footer_customer_box:hover {
+    color: white;
+    background-color: #fe6936;
+}
