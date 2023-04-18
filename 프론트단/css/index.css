@@ -337,6 +337,10 @@ main {
     color: rgb(130, 130, 130);
 }
 
+.aDown6>span:nth-child(2) {
+    font-size: 50px;
+}
+
 .infoDown2 {
     flex: 2;
     display: flex;
@@ -377,7 +381,6 @@ main {
 
 .bDown5 {
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 

@@ -313,3 +313,62 @@ middleAddArea2.on("mouseup", (e) => {
 });
 
 // 중간 광고 영역2
+
+// 숫자 증가
+// 가입 회원 수
+$({ val: 0 }).animate({ val: 2000 }, { // 값이 0 부터 2000 까지 애니메이션 효과 적용.
+    duration: 2000, // 2,000 ms 초 동안 실행
+    easeing: 'easeOutQuad',
+    step: function () { // step : 움직임이 발생할 때마다 실행할 함수를 등록.
+        var num = numberWithCommas(Math.floor(this.val)); // Math.floor -> 소수점 이하 자리를 버린다는 의미이다.
+        $(".count_num1").text(num); // .text는 innerText와 같다.
+    },
+    complete: function () { // complete : 애니메이션이 종료 후 실행할 함수를 등록.
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".count_num1").text(num);
+    },
+});
+
+// 회원 증가율
+$({ val: 0 }).animate({ val: 120 }, {
+    duration: 2000,
+    step: function () {
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".count_num2").text(num);
+    },
+    complete: function () {
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".count_num2").text(num);
+    }
+});
+
+// 오픈된 클래스
+$({ val: 0 }).animate({ val: 600 }, {
+    duration: 2000,
+    step: function () {
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".count_num3").text(num);
+    },
+    complete: function () {
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".count_num3").text(num);
+    }
+});
+
+// 글로벌 포함 연사 수
+$({ val: 0 }).animate({ val: 700 }, {
+    duration: 2000,
+    step: function () {
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".count_num4").text(num);
+    },
+    complete: function () {
+        var num = numberWithCommas(Math.floor(this.val));
+        $(".count_num4").text(num);
+    }
+});
+
+
+function numberWithCommas(x) { // 3자리마자 콤마를 찍어주기 위한 정규식.
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
