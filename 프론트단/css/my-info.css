@@ -6,6 +6,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
 
+main{
+    width: 100%;
+}
 .bodyContainer {
     width: 100%;
     display: flex;
@@ -192,7 +195,7 @@
     margin : 14px 0px 0px 0px; 
 }
 .newInfoDup{
-    flex-basis: 70%;
+    flex-basis: 80%;
     border: none;
     display: flex;
     width: 100%;
@@ -206,8 +209,8 @@
     font-size: 15px;
 }
 .input-areaDup > button{
-    flex-basis: 30%;
-    width: 50px;
+    flex-basis: 20%;
+    
     margin: 0;
     background-color: rgb(255, 142, 29);
     border: none;

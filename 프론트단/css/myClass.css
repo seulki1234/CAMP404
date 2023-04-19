@@ -1,41 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
-
-.bodyContainer {
+.myClass-container {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 /*body-nav*/
-.bodyContainer>nav {
+.myClass-container nav:nth-child(1) {
     width: 30%;
     height: 970px;
     background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* <nav> 안녕하세요. 김철수님 [전체] */
-.summary-Container {
-    width: 40%;
+.myClass-summary-container {
+    width: 80%;
     height: 780px;
-    margin-left: 90px;
 }
 
 /* 안녕하세요. ~님 글자 영역 */
-.hi-User {
-    width: 300%;
-    padding-top: 100px;
+.myClass-hiUser {
+    width: 100%;
+    padding-top: 70px;
     padding-bottom: 50px;
 
     /*font */
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     /*안녕하세요 * 님 폰트 크기, 행간 조절*/
     letter-spacing: -0.5px;
@@ -50,15 +52,13 @@
 }
 
 /* 나의강의장, 찜목록, 정보수정 버튼 */
-.content-contaienr {
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
+.myClass-content-container {
+    width: 100%;
 }
 
 /* 버튼영역 */
 .content-1 {
-    width: 180%;
+    width: 90%;
     height: 60px;
 
     background-color: #333333;
@@ -69,6 +69,7 @@
     align-items: center;
     padding-left: 16px;
     cursor: pointer;
+
 }
 
 .content-1:hover {
@@ -76,35 +77,37 @@
     font-weight: bolder;
 }
 
-.class-a{
+.content-1 span{
     display: flex;
-    color: white;
     width: 93%;
     justify-content: space-between;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    color: white;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-
+.content-1 i{
+    color: white;
+    margin-right: 20px;
+}
 
 /* 로그아웃버튼 */
-.logout {
+.logout-btn{
     color: #fe6936;
-    font-weight: 800;
     background-color: transparent;
     border: 0 none;
-    margin-top: 20px;
     margin-left: 10px;
-    font-size: 100%;
+    font-size: 17px;
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+    font-weight: 550;
 }
 
 /*------------------body-content------------------*/
 
 /* 나의 정보 본문 */
-.content-Area {
+.myClass-content-area {
     width: 70%;
     height: 100%;
     background-color: white;
@@ -112,33 +115,37 @@
     /* flex */
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 /* 전제목록, 수강중, 수강완료  버튼 부분 */
-.class-btnpart {
-    width: 85%;
-    background-color: transparent;
-
+.myClass-over-navpart{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top : 3rem;
+    margin-bottom: 2rem;
+    padding: 2rem 4rem;
+    justify-content: space-between;
+}
+
+.myClass-over-btn {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
 }
 
 /* 전체목록, 수강중, 수강완료 버튼 안쪽 영역 */
-.class-btnpart>span {
+.myClass-over-btn span{
     height: 100%;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 50px;
     background-color: #eeeeee;
     color: rgb(188, 188, 188);
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Noto Sans KR', sans-serif;
 
-    margin-right: 8px;
-    padding: 10px 12px 8px 12px;
+    margin-right: 9px;
+    padding: 4px 10px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -146,7 +153,6 @@
 
     flex: none;
 }
-
 .class-btn:hover {
     background-color: #fe6936;
     font-weight: bolder;
@@ -158,10 +164,8 @@
     border: 1px solid #cecece;
     border-radius: 50px;
 
-    padding-left: 5px;
     font-size: 16px;
-    margin-left: 380px;
-    padding: 8px 15px 8px 5px;
+    padding: 7px 30px 7px 10px ;
     display: flex;
     align-items: center;
 
@@ -175,7 +179,6 @@ input::placeholder{color:#cecece;}
 
 .class-mySearchBarWrapper>i {
     color: #e0e0e0;
-    margin-left: 5px;
     margin-right: 10px;
 }
 .class-searchBar {
@@ -184,36 +187,30 @@ input::placeholder{color:#cecece;}
 }
 
 /*class-content-1 / 강의 목록 */
-.class-contentpart {
+.myclass-under-contentpart {
     width: 95%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 30%;
     align-items: center;
     flex-wrap: wrap;
-
-    padding-bottom: 30px;
     align-content: space-around;
 }
 
-.class-content-container-1 {
-    width: 85%;
-    height: 280px;
+.content-css{
+    width: 100%;
+    height: 350px;
     background-color: transparent;
-
+    padding: 0px 70px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.class-content-container-2 {
-    width: 85%;
-    height: 280px;
-    background-color: transparent;
+.content-container-1 .content-container-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     margin-top: 3%;
 }
 
@@ -232,7 +229,7 @@ input::placeholder{color:#cecece;}
 /* 강의 목록 -> 이미지 */
 .class1>img {
     width: 100%;
-    height: 55%;
+    height: 57%;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -263,37 +260,36 @@ input::placeholder{color:#cecece;}
 .class-index {
     width: 90%;
     height: 40%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 /* 나의 강의: 강의구분[JAVA] */
 .class-index>span {
     /* border-radius: 50px; */
-    padding: 4px 6px 4px 6px;
+    padding: 0px 6px 2px 0px;
     /* background-color: #cecece;  */
     align-self: flex-start;
-    margin: 10px 0px 1px -5px;
+    margin-top: 10px;
     /* font */
-    font-size: 13px;
-    font-weight: bolder;
+    font-size: 16px;
+    font-weight: 600;
     color: #cecece;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 .class-index-content {
     width: 100%;
+    height: 100%;
 
     /* font */
-    font-size: 0.95rem;
+    font-size: 17px;
     font-family: 'Noto Sans KR', sans-serif;
     color: #333333;
-    line-height: 20px;
-    font-weight: bolder;
+    line-height: 23px;
+    font-weight: 500;
+    overflow: hidden;
 }
 
 /* goClass == 수강하기 */
@@ -301,7 +297,6 @@ input::placeholder{color:#cecece;}
     width: 100%;
     height: 100%;
     background-color: #333333;
-    margin-top: 8px;
     border-radius: 50px;
     cursor: pointer;
     /* flex */
@@ -317,7 +312,11 @@ input::placeholder{color:#cecece;}
     font-weight: 800;
 }
 /* 페이지네이션 */
+.page-nav{
+    width: 100%;
+}
 .pagination {
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: center;
