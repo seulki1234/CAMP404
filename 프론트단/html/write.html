@@ -10,9 +10,9 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="/css/notice.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/write.css">
+    <link rel="stylesheet" type="text/css" href="/css/notice.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/write.css">
 
     <style>
         table{
@@ -22,15 +22,20 @@
         .write-table{
             border: 1px solid black;
             width: 90%;
+            padding-top: 400px;
         }
 
         .write-table td {
             text-align: center;
             font-weight: bold;
         }
+
+        .write-table > td:nth-of-type(1){
+    width: 150px;
+}
     </style>
 
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         function validateForm(form){  // 필수 항목 입력 확인
             if(form.name.value == ""){
                 alert("작성자를 입력하세요.");
@@ -48,19 +53,18 @@
                 return false;
             }
         }
-    </script> -->
+    </script>
 
 </head>
 <body>
     
-    <!-- <header>
+    <header>
         <div data-include1="header" id="header"></div>
-    </header> -->
+    </header>
 
 
-    <!-- <form name="writeFrm" method="post" enctype="multipart/form-data" 
-    action="../notice/write.do" onsubmit="return validateForm(this);"> -->
-    <form>
+    <form name="writeFrm" method="post" enctype="multipart/form-data" 
+    action="../notice/write.do" onsubmit="return validateForm(this);">
         <table class="write-table" >
             <tr>
                 <td class="write-writer">작성자</td>
@@ -101,7 +105,7 @@
 
 
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
     $(function () {
@@ -112,7 +116,7 @@
             $(this).load('/html/header.html');
         });
     });
-    </script> -->
+    </script>
 
 </body>
 </html>
