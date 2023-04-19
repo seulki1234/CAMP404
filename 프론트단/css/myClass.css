@@ -75,6 +75,9 @@
 .content-1:hover {
     background-color: #fe6936;
     font-weight: bolder;
+
+    box-shadow: 0px 0px 8px #9f9f9f;
+    transition-duration: 0.2s;
 }
 
 .content-1 span{
@@ -124,7 +127,7 @@
     flex-direction: row;
     margin-top : 3rem;
     margin-bottom: 2rem;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
     justify-content: space-between;
 }
 
@@ -137,7 +140,7 @@
 /* 전체목록, 수강중, 수강완료 버튼 안쪽 영역 */
 .myClass-over-btn span{
     height: 100%;
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 50px;
     background-color: #eeeeee;
     color: rgb(188, 188, 188);
@@ -145,7 +148,7 @@
     font-family: 'Noto Sans KR', sans-serif;
 
     margin-right: 9px;
-    padding: 4px 10px;
+    padding: 5px 12px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -157,6 +160,8 @@
     background-color: #fe6936;
     font-weight: bolder;
     color: white;
+    box-shadow: 0px 0px 8px #9f9f9f;
+    transition-duration: 0.2s;
 }
 
 /* 나의강의찾기 input부분 */
@@ -164,8 +169,8 @@
     border: 1px solid #cecece;
     border-radius: 50px;
 
-    font-size: 16px;
-    padding: 7px 30px 7px 10px ;
+    font-size: 20px;
+    padding: 10px 40px 10px 10px ;
     display: flex;
     align-items: center;
 
@@ -292,6 +297,10 @@ input::placeholder{color:#cecece;}
     overflow: hidden;
 }
 
+show_index{
+    color: #fe6936;
+}
+
 /* goClass == 수강하기 */
 .goClass {
     width: 100%;
@@ -307,9 +316,11 @@ input::placeholder{color:#cecece;}
     color: white;
     font-weight: 600;
 }
-.goClass:hover {
+.goClass:hover{
     background-color: #fe6936;
     font-weight: 800;
+    box-shadow: 0px 0px 8px #9f9f9f;
+    transition-duration: 0.2s;
 }
 /* 페이지네이션 */
 .page-nav{
