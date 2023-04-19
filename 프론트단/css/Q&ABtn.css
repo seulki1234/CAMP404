@@ -1,17 +1,18 @@
-* {
+/* * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
 
 section{
-    width: 100%;
-    display: flex;
-    margin-left: 98rem;
-    position: static;
-    position: fixed;
+    
+   position: fixed;
+
+   right: 50px;
+   bottom: 50px;
+  
    
 }
 
@@ -22,59 +23,78 @@ section{
     /* margin-top: 50rem; */
     /* margin-left: 50rem; */
     cursor: pointer;
-    position: relative;
+    position: fixed;
     width: 80px;
     height: 80px;
+
+    right: 50px;
+    bottom: 50px;
     background-color: blue;
     border-radius: 30px;
 } */
-/* ---------------------- */
+/* ---------------------- 
 /*Q&A 클릭 시 메인 창*/
 .QnABtn-container {
     position: fixed;
-    width: 350px;
-    height: 600px;
+    
+   
+
+    right: 50px;
+    bottom: 50px;
+
     background-color: #eaeaea;
     border-radius: 30px;
-    /* margin-top: 80px;*/
-    /* margin-left: 50rem; */
-    padding-top: 30px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   
+   
+    align-items: center; 
+    justify-content: center;
 }
+/* .show{
+    position: fixed;
+    
+
+
+    right: 50px;
+    bottom: 50px;
+} */
 
 /* QnA 메인 화면 */
 .QnABtn-2-overContainer {
     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
-    align-items: center;
+    /* align-items: center; */
+   
 }
 
 /* 로고 영역 */
-.QnABtn-2-overContainer>img {
-    width: 35%;
+.QnABtn-2-overContainer img {
+    width: 200px;
     margin-bottom: 18px;
-    margin-left: 10%;
-    margin-right: 38%;
+    margin-left: 10px;
+    margin-right: 120px;
 }
 
-.QnABtn-2-overContainer>i {
-    margin-bottom: 20px;
+.QnABtn-2-overContainer i {
+    margin-top: 15px;
     cursor: pointer;
+   color: black;
 }
 
 
 
 /* 설명창 */
 .QnA-2-content{
-    width: 90%;
+    width: 350px;
     height: 55%;
     background-color: white;
     border-radius: 30px;
     padding-left: 15px;
     padding-top: 15px;
+
+    align-items: center; 
+    justify-content: center;
+   
 
     /* box 그림자 영역 */
     box-shadow: 0px 0px 8px #cbcbcb;
@@ -147,13 +167,14 @@ section{
 }
 /* 문의하기 버튼 */
 .inquire-btn{
-    width: 90%;
-    height: 15%;
+    width: 150px;
+    height: 35px;
     display: flex;
     justify-content: center;
     background-color: #fe6936;
     border-radius: 50px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    margin: auto auto;
 
     /* flex */
     display: flex;

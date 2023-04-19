@@ -64,7 +64,13 @@ a{
 .classroom_tabs li {
     list-style : none;
     padding : 10px;
-    
+}
+
+.classroom_tabs li a:hover{
+    color: rgb(255, 142, 29);
+}
+#classroom_tabs_menu{
+   
 }
 
 
