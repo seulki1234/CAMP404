@@ -286,25 +286,27 @@ $('.counterOuter').text($(e.target).val().length);
 $('document').ready(function(){
  
   $('#classroom_tabs_menu').focus(function(){
-    $(this).css("color","rgb(255, 142, 29)");
-   });
-   $("#classroom_tabs_menu").blur(function(){ 
-    $(this).css("color","rgb(146, 145, 145)");
+      $(this).css("color","rgb(255, 142, 29)");
     });
-    $('#classroom_tabs_file').focus(function(){
+      $("#classroom_tabs_menu").blur(function(){ 
+      $(this).css("color","rgb(146, 145, 145)");
+    });
+    
+  $('#classroom_tabs_file').focus(function(){
       $(this).css("color","rgb(255, 142, 29)");
       $('#classroom_tabs_menu').css("color","rgb(146, 145, 145)")
-     });
-     $("#classroom_tabs_file").blur(function(){ 
+    });
+      $("#classroom_tabs_file").blur(function(){ 
       $(this).css("color","rgb(146, 145, 145)");
-      });
-      $('#classroom_tabs_note').focus(function(){
-        $(this).css("color","rgb(255, 142, 29)");
-        $('#classroom_tabs_menu').css("color","rgb(146, 145, 145)")
-       });
-       $("#classroom_tabs_note").blur(function(){ 
-        $(this).css("color","rgb(146, 145, 145)");
-        });
+    });
+    
+  $('#classroom_tabs_note').focus(function(){
+      $(this).css("color","rgb(255, 142, 29)");
+      $('#classroom_tabs_menu').css("color","rgb(146, 145, 145)")
+    });
+      $("#classroom_tabs_note").blur(function(){ 
+      $(this).css("color","rgb(146, 145, 145)");
+    });
 })
 
 

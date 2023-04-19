@@ -150,6 +150,7 @@
     </header>
 
     <main>
+        <div data-inclued2="Q&ABtn" id="Q&ABtn"></div>
         <!-- 상단 슬라이드 이미지 영역 -->
         <div class="setSlideArea">
             <div class="SlideImageContainer">
@@ -838,6 +839,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(function () {
+           
+            var include2 = $('[data-inclued2="Q&ABtn"]');
+           
+            jQuery.each(include2, function () {
+                $(this).load('/html/Q&ABtn.html');
+            });
+        });
+
+    </script>
 
     <script src="/js/header.js"></script>
     <!-- <script src="${contextPath}/resources/js/learningPage.js"></script> -->
