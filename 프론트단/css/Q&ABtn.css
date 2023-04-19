@@ -79,8 +79,12 @@ QnA 메인 화면
 #xbtn {
     width: 30px;
     cursor: pointer;
+    transition: 0.3s;
 }
-
+#xbtn:hover{
+    transform: scale(1.2);
+    padding-left: 1.5px;
+}
 
 
 /* 설명창 */
@@ -181,6 +185,12 @@ QnA 메인 화면
     0 3px 0 -1px rgba(0,0,0,0.08), 
     0 3px 13px -1px rgba(0,0,0,0.21);
 }
+.inquire-btn:active {
+    top: 1px;
+    border-color: rgba(0,0,0,0.34) rgba(0,0,0,0.21) rgba(0,0,0,0.21);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.89),0 1px rgba(0,0,0,0.05) inset;
+    position: relative;
+  }
 .inquire-btn > a {
     text-decoration: none;
     font-weight: 700;
