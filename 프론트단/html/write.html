@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글쓰기 페이지</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" href="/css/notice.css"> -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/write.css">
+
     <!-- <script type="text/javascript">
         function validateForm(form){  // 필수 항목 입력 확인
             if(form.name.value == ""){
@@ -29,10 +37,15 @@
 </head>
 <body>
     
+    <!-- <header>
+        <div data-include1="header" id="header"></div>
+    </header> -->
+
+
     <!-- <form name="writeFrm" method="post" enctype="multipart/form-data" 
     action="../notice/write.do" onsubmit="return validateForm(this);"> -->
     <form>
-        <table border="1" width="90%">
+        <table>
             <tr>
                 <td>작성자</td>
                 <td>
@@ -68,12 +81,28 @@
                 <td colspan="2" align="center">
                     <button type="submit">작성완료</button>
                     <button type="reset">RESET</button>
-                    <button type="button" onclick="location.href='../notice/list.do;'">목록 바로가기</button>
+                    <button type="button" onclick="location.href='/html/notice.html'">목록 바로가기</button>
                 </td>
             </tr>
         </table>
     </form>
 
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        var include1 = $('[data-include1="header"]');
+
+        jQuery.each(include1, function () {
+
+            $(this).load('/html/header.html');
+        });
+    });
+    </script> -->
 
 </body>
 </html>
