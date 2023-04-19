@@ -25,11 +25,20 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.bodyBGColor {
+.bgColor {
+    position: absolute;
     transition-property: all;
     transition-duration: 0.5s;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+.bgColorHidden {
+    display: none;
+}
+
+
 
 /* 헤더 태그, 크기 조절용 */
 header {
@@ -46,6 +55,7 @@ header {
 
 /* 큰 항목들 수직 정렬 */
 .headerContainer {
+    z-index: 20;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -129,6 +139,8 @@ header {
 .btnHide {
     visibility: hidden;
 }
+
+
 
 /* 검색창에 입력시 X버튼 나오게 하기 위한 클래스 */
 .searchXBtn {
@@ -332,7 +344,7 @@ header {
     padding-top: 20px;
 }
 
-.subMenuLineUp li {
+.subMenuLineUp  li {
     float: left;
     padding-right: 100px;
 }

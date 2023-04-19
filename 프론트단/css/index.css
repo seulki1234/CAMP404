@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* 전체 테두리 영역 지정 */
 body {
     display: flex;
     width: 100%;
@@ -15,6 +16,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 실제 내용이 들어갈 영역 지정 */
 main {
     display: flex;
     flex-direction: column;
@@ -23,11 +25,14 @@ main {
     height: 100%;
 }
 
+/* ====================================================================== */
+/* 상단 슬라이드 이미지 영역 */
+/* 상단 슬라이드 이미지 */
 .setSlideArea {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    background-color: #fbda96;
+    width: calc(100vw - 16.5px);
+    background-color: #1e1e1e;
     margin-bottom: 40px;
     /* background-image: */
     /* 오른쪽 -> 왼쪽 */
@@ -36,16 +41,18 @@ main {
     /* linear-gradient(90deg, rgb(255, 255, 255) 0%, transparent 5%); */
 }
 
+
 .SlideImageContainer {
     position: relative;
     width: 1100px;
     overflow: hidden;
 }
 
+/* 왼쪽 오른쪽 이동 버튼 */
 .slideBtn {
     position: absolute;
     margin: 0 auto;
-    z-index: 11;
+    z-index: 1;
     width: auto;
     display: flex;
     color: white;
@@ -75,7 +82,7 @@ main {
     padding: 10px;
 }
 
-
+/* 슬라이드 영역 지정. 총 4개이기 때문에 width가 4400px. */
 .slideImgHolder {
     display: flex;
     width: 4400px;
@@ -90,13 +97,17 @@ main {
     flex: 1;
 }
 
+/* 슬라이드 이미지 크기 지정 */
 .innerImg {
     width: 100%;
     height: 100%;
     border: none;
     outline: none;
+    -webkit-user-drag: none;
+    /* 클릭 후 넘기기를 위해 지정. */
 }
 
+/* 슬라이드 내부 텍스트 */
 .slideTitle {
     position: absolute;
     z-index: 1;
@@ -109,27 +120,87 @@ main {
 .slideTitle>span {
     display: flex;
     margin-bottom: 15px;
+}
+
+/* 각 슬라이드 마다 다르게 글을 지정할 수 있기때문에 각 슬라이드마다 지정해둠. */
+/* 1번 슬라이드 */
+.slideTitle1-1 {
+    margin-left: 5px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.slideTitle1-2 {
+    font-size: 36px;
+    font-weight: bold;
     color: white;
 }
 
-.slideTitle1 {
+.slideTitle1-3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+
+/* 2번 슬라이드 */
+.slideTitle2-1 {
     margin-left: 5px;
 }
 
-.slideTitle2 {
+.slideTitle2-2 {
     font-size: 36px;
     font-weight: bold;
 }
 
-.slideTitle3 {
+.slideTitle2-3 {
     font-size: 36px;
     font-weight: bold;
 }
 
 
+/* 3번 슬라이드 */
+.slideTitle3-1 {
+    margin-left: 5px;
+    color: white;
+}
+
+.slideTitle3-2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.slideTitle3-3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
 
 
+/* 4번 슬라이드 */
+.slideTitle4-1 {
+    margin-left: 5px;
+}
 
+.slideTitle4-2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.slideTitle4-3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* 상단 슬라이드 이미지 영역 */
+
+/* ====================================================================== */
+
+/* 후기, 포트폴리오, 이벤트, 강사소개 영역 */
 .infoArea {
     display: flex;
     align-items: center;
@@ -144,9 +215,11 @@ main {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 40px;
 
 }
 
+/* 각 항목별 사이즈 */
 .infoBoxes {
     display: flex;
     flex-direction: column;
@@ -160,6 +233,7 @@ main {
     text-decoration: none;
 }
 
+/* 위에있는 큰 텍스트 영역 */
 .innerUp {
     color: white;
     display: flex;
@@ -168,13 +242,18 @@ main {
     font-weight: bold;
 }
 
+/* 아래있는 작은 텍스트 영역 */
 .innerDown {
     color: white;
     font-size: 10px;
     font-weight: bold;
 }
 
+/* 후기, 포트폴리오, 이벤트, 강사소개 영역 */
 
+/* ====================================================================== */
+
+/* 회원 수 및 수업 수 영역*/
 .infoDown {
     flex: 5;
     display: flex;
@@ -302,7 +381,6 @@ main {
 }
 
 
-
 .infoDown3 {
     flex: 2;
     display: flex;
@@ -312,6 +390,13 @@ main {
     height: 120px;
 }
 
+/* 회원 수 및 수업 수 영역*/
+
+/* ====================================================================== */
+
+/* 강의영역 */
+
+/* 강의영역 크기 설정 */
 .classWrapper {
     display: flex;
     flex-direction: column;
@@ -320,19 +405,31 @@ main {
     margin-bottom: 40px;
 }
 
+/* 강의명 */
 .classTitle {
     flex: 1;
     display: flex;
     align-items: center;
     font-size: 32px;
     color: #fe6936;
+    justify-content: space-between;
 }
 
-.classTitle>span:nth-child(1) {
+
+.classTitle1>span:nth-child(1) {
     font-weight: bold;
     padding-right: 5px;
 }
 
+/* 강의명 옆 더보기 */
+.classTitle2 {
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fe6936;
+}
+
+/* 강의 설명 */
 .classDescription {
     flex: 8;
     display: flex;
@@ -420,13 +517,21 @@ main {
     cursor: pointer;
 }
 
+.likeBtn>i:active {
+    outline: white;
+}
+
+.likeColor {
+    color: red;
+}
+
 .subText {
     width: 300px;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
     color: white;
     margin-bottom: 10px;
     line-height: 20px;
+    -webkit-text-stroke: 0.3px white;
 }
 
 .tutorTitle {
@@ -480,4 +585,9 @@ main {
     color: #fe6936;
     font-size: 12px;
     font-weight: bold;
+}
+
+.footer_customer_box:hover {
+    color: white;
+    background-color: #fe6936;
 }
