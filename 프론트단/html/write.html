@@ -10,9 +10,25 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- <link rel="stylesheet" href="/css/notice.css"> -->
+    <link rel="stylesheet" href="/css/notice.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/write.css">
+
+    <style>
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        .write-table{
+            border: 1px solid black;
+            width: 90%;
+        }
+
+        .write-table td {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 
     <!-- <script type="text/javascript">
         function validateForm(form){  // 필수 항목 입력 확인
@@ -45,33 +61,27 @@
     <!-- <form name="writeFrm" method="post" enctype="multipart/form-data" 
     action="../notice/write.do" onsubmit="return validateForm(this);"> -->
     <form>
-        <table>
+        <table class="write-table" >
             <tr>
-                <td>작성자</td>
+                <td class="write-writer">작성자</td>
                 <td>
-                    <input type="text" name="name" style="width:150px;" />
+                    <input type="text" name="name" />
                 </td>
             </tr>
             <tr>
-                <td>제목</td>
+                <td class="write-title">제목</td>
                 <td>
-                    <input type="text" name="title" style="width: 90%;" />
+                    <input type="text" name="title" />
                 </td>
             </tr>
             <tr>
-                <td>제목</td>
+                <td class="write-content">내용</td>
                 <td>
-                    <input type="text" name="title" style="width: 90%;" />
+                    <textarea name="content"></textarea>
                 </td>
             </tr>
             <tr>
-                <td>내용</td>
-                <td>
-                    <textarea name="content" style="width: 90%; height: 100px;"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>첨부 파일</td>
+                <td class="write-file">첨부 파일</td>
                 <td>
                     <input type="file" name="ofile" />
                 </td>
