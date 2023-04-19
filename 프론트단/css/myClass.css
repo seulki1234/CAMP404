@@ -198,7 +198,7 @@ input::placeholder{color:#cecece;}
 
 .content-css{
     width: 100%;
-    height: 280px;
+    height: 350px;
     background-color: transparent;
     padding: 0px 70px;
     margin-bottom: 30px;
@@ -211,7 +211,6 @@ input::placeholder{color:#cecece;}
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     margin-top: 3%;
 }
 
@@ -230,7 +229,7 @@ input::placeholder{color:#cecece;}
 /* 강의 목록 -> 이미지 */
 .class1>img {
     width: 100%;
-    height: 55%;
+    height: 57%;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -269,12 +268,12 @@ input::placeholder{color:#cecece;}
 /* 나의 강의: 강의구분[JAVA] */
 .class-index>span {
     /* border-radius: 50px; */
-    padding: 0px 6px 3px 0px;
+    padding: 0px 6px 2px 0px;
     /* background-color: #cecece;  */
     align-self: flex-start;
-    margin: 10px 0px 0px 0px;
+    margin-top: 10px;
     /* font */
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #cecece;
     font-family: 'Source Sans Pro', sans-serif;
@@ -285,10 +284,10 @@ input::placeholder{color:#cecece;}
     height: 100%;
 
     /* font */
-    font-size: 14px;
+    font-size: 17px;
     font-family: 'Noto Sans KR', sans-serif;
     color: #333333;
-    line-height: 20px;
+    line-height: 23px;
     font-weight: 500;
     overflow: hidden;
 }
@@ -298,7 +297,6 @@ input::placeholder{color:#cecece;}
     width: 100%;
     height: 100%;
     background-color: #333333;
-    margin-top: 8px;
     border-radius: 50px;
     cursor: pointer;
     /* flex */
