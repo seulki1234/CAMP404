@@ -1,34 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     width: 1100px;
     height: 100%;
 }
 
 .SlideImageContainer {
     border: 1px solid black;
-    width: inherit;
-    min-height: 400px;
+    /* background-image: */
+    /* 오른쪽 -> 왼쪽 */
+    /* linear-gradient(270deg, rgb(255, 255, 255) 0%, transparent 5%), */
+    /* 왼쪽 -> 오른쪽 */
+    /* linear-gradient(90deg, rgb(255, 255, 255) 0%, transparent 5%); */
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 40px;
 }
+
+.slideBtn {
+    position: absolute;
+    margin: 0 auto;
+    z-index: 11;
+    width: auto;
+    display: flex;
+    top: 450px;
+    color: white;
+    font-size: 12px;
+}
+
+
+.slideBtn>div {
+    position: relative;
+    left: -360px;
+}
+
+
+.slideImgHolder {
+    display: flex;
+    width: 1100px;
+    height: 400px;
+
+}
+
+.slideContainer {
+    width: 300vw;
+}
+
+.innerImg {
+    width: 100vh;
+}
+
+.slideTitle {
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    margin: auto;
+    top: 300px;
+}
+
+.slideTitle>span {
+    position: relative;
+    display: flex;
+    left: 150px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.slideTitle1 {
+    margin-left: 5px;
+}
+
+.slideTitle2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.slideTitle3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+
 
 .infoArea {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
     min-width: 1100px;
     min-height: 300px;
 }
@@ -76,7 +154,7 @@ main {
     width: 100%;
     height: 120px;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .infoDown1 {
@@ -253,33 +331,37 @@ main {
 
 
 .imgArea {
-    flex: 6;
+    flex: 7;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* 330 x 217 */
 .imgArea>img {
     border-radius: 15px 15px 0 0;
+    max-width: 100%;
+    height: 217px;
 }
 
 .textArea {
-    flex: 4;
+    flex: 3;
     display: flex;
     flex-direction: column;
     background-color: #fe6936;
     border-radius: 0 0 15px 15px;
-    padding: 20px 15px;
+    padding: 10px 15px;
 }
 
 .topText {
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .mainText {
     flex: 7;
     font-size: 12px;
+    padding-top: 5px;
 }
 
 .mainText1 {
@@ -316,11 +398,59 @@ main {
     font-size: 14px;
     font-weight: bold;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 20px;
 }
 
 .tutorTitle {
     font-size: 12px;
     color: white;
+}
+
+.middleAddArea {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #161cff;
+    margin-bottom: 40px;
+}
+
+.middleAddItems {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+    flex-direction: column;
+}
+
+.middleAddItems>span {
+    font-size: 10px;
+    color: white;
+}
+
+.middleAddItems>span:first-child {
+    margin-bottom: 5px;
+}
+
+.middleLogoWrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.middleLogoWrapper>span {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+
+.middleCheckEvent>a {
+    text-decoration: none;
+    color: #fe6936;
+    font-size: 12px;
+    font-weight: bold;
 }

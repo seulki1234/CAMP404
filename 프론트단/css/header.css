@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -18,7 +21,8 @@
 }
 
 body {
-    font-family: "Helvetica";
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .bodyBGColor {
@@ -36,7 +40,7 @@ header {
     display: flex;
     justify-content: center;
     height: 100px;
-    width: 100vw;
+    width: 100%;
     background-color: black;
 }
 
@@ -162,7 +166,7 @@ header {
     background-color: rgba(0, 0, 0);
     border-top: 3px solid rgba(255, 255, 255, 0.3);
     width: 100%;
-    height: 400px;
+    height: 440px;
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -348,6 +352,7 @@ header {
 .subMenuAtag:hover {
     color: orange;
 }
-.test{
+
+.test {
     font-family: "Helvetica";
 }

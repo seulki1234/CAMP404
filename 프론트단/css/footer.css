@@ -1,6 +1,7 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 
 
 body{
@@ -26,8 +27,10 @@ footer{
 
 }
 
-a, p {
+a,
+p {
     text-decoration: none;
+
     color : white;
 
 }
@@ -56,6 +59,7 @@ a, p {
 
 /**/
 .footer_content_up, .footer_content_down {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,11 +73,13 @@ a, p {
 
 
 
+
 /*footer 윗부분 왼쪽에서 1*/
 .footer_logo > :nth-child(1){
     margin : 0px;
     padding-top: 0;
     width : 100px;
+
 }
 
 
@@ -86,16 +92,20 @@ a, p {
 
 /*글로벌버튼*/
 .button{
+
     background-color: rgb(75, 74, 74);
     padding : 5px;
     border-radius: 5px;
+
     margin : 0;
     display : flex;   
+
 }
 
 .button a {
     display: flex;
     flex-direction: row;
+
 
 }
 
@@ -112,16 +122,18 @@ a, p {
 .button_a > :nth-child(3) {   
     margin : 0 0 0 20px;
     color : orange;
+
 }
 
 
-/*mouseover 시 열리는 menu*/
+
 .button > a{
     padding : 10px;
     list-style: none;
 }
 
 .menu{
+
     display: none;
     position: absolute;
 	/* z-index: 1; */
@@ -173,8 +185,10 @@ a, p {
 
 
 
+
 /*footer 윗부분 왼쪽에서2,3*/
 .footer_menu_1, .footer_menu_2{
+
     display: flex;
     list-style: none;
     flex-direction: column;
@@ -187,6 +201,7 @@ a, p {
     padding:  10px 10px 15px 10px ;
     font-size: 16px;
 }
+
 
 .footer_menu_1 li, .footer_menu_2 li, .footer_customer_box  {
     padding:  10px ;
@@ -210,6 +225,7 @@ a, p {
 
     
 }
+
 
 /*footer 윗부분 2,3,4 해당 소제목 */
 .footer_menu_1 > :nth-child(1) , .footer_menu_2>:nth-child(1) 
