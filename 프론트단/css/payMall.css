@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main > div{
+    width: 30%;
+    height: 970px;
+    background-color: #e1e1e1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* 결제 정보 */
+#pay-container > div{
+    width: 80%;
+    height: 970px;
+    margin-left: 90px;
+}
+
+.payment-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+/* 지불정보_title */
+.payment-info > h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 37px;
+    margin-bottom: 30px;
+}
+.empty-line{
+    display: block;
+    height: 1.05rem;
+    line-height: 5px;
+    border-bottom: 0.5px solid #333333;
+}
+.line2{
+    border-bottom: 2px solid #333333;
+}
+/* 결제목록 */
+.payment-content{
+    font-size: 0.95rem;
+}
+.payment-content ul {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.payment-content ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
