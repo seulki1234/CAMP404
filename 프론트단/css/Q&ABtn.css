@@ -6,37 +6,39 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
 
+section{
+    width: 100%;
+    display: flex;
+    margin-left: 98rem;
+    position: static;
+    position: fixed;
+   
+}
 
 /* Q&A 아이콘 */
-.QnABtn-icon-container {
-    position: absolute;
-}
-
-.QnABtn-1 {
-    position: fixed;
+.QnABtn-icon {
+    
+    /* width: 100%;
+    /* margin-top: 50rem; */
+    /* margin-left: 50rem; */
+    cursor: pointer;
+    position: relative;
     width: 80px;
     height: 80px;
-
     background-color: blue;
     border-radius: 30px;
-    margin-top: 600px;
-    margin-left: 1300px;
-}
+} */
 /* ---------------------- */
 /*Q&A 클릭 시 메인 창*/
 .QnABtn-container {
-
-    position: absolute;
     position: fixed;
     width: 350px;
     height: 600px;
-
     background-color: #eaeaea;
     border-radius: 30px;
-    margin-top: 80px;
-    margin-left: 1050px;
-    padding-top: 30px;
-
+    /* margin-top: 80px;*/
+    /* margin-left: 50rem; */
+    padding-top: 30px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,6 +178,10 @@
 
 }
 .exclamation-emoji>i{color: rgb(255, 175, 1);}
+
+.hidden{
+    display: none;
+}
 
 
   
