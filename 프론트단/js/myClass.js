@@ -4,6 +4,8 @@
 
 // goClass.addEventListener("mouseover", function() {
 
+
+
 //     index.style.color = "#fe6936";
 // })
 // goClass.addEventListener("mouseleave", function() {
@@ -23,3 +25,4 @@ for (let i = 0; i < goClass.length; i++) {
         index[i].style.color = "#cecece";
     })
 };
+
