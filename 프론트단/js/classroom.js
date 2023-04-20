@@ -139,6 +139,7 @@ $('.subArea').hide();/*저장된 강의노트 목록 show */
     const addWrapper = document.createElement('div');
     addWrapper.classList.add('addWrapper');
     
+    //subArea 저장된 강의노트 목록
     //addArea(노트작성시 추가되어 나열되는 목록)
     //slideWrapper(나열된 노트를 클릭시 수정할 수 있는 박스가 추가되어 나열됨)
     //    slideArea(수정할수 잇는 노트부분을 감싸는 영역)
