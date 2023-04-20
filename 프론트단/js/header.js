@@ -6,16 +6,17 @@ const closeSearch = $('.closeSearch');
 const searchSubMenu = $('.searchSubMenu');
 const body = $('body');
 const searchItems = $('.searchItems');
+const bgColor = $('.bgColor');
 
 
 // 검색창 클릭 시 가운데 이동 및 사이즈 변경
 searchBar.on('click', function () {
     if (searchBarWrapper.hasClass('searchBarMiddle') === false) {
         subMenu.slideUp('fast');
-        body.removeClass('bodyBGColor');
+        bgColor.removeClass('bgColorHidden');
 
         searchBarWrapper.addClass('searchBarMiddle');
-        body.addClass('bodyBGColor');
+        // bgColor.addClass('bgColorHidden');
     } else {
         return false;
     }
@@ -56,7 +57,7 @@ closeSearch.on('click', function () {
         searchSubMenu.addClass('searchSubMenu_Hide');
 
         searchBarWrapper.removeClass('searchBarMiddle');
-        body.removeClass('bodyBGColor');
+        bgColor.addClass('bgColorHidden');
     } else {
         return false;
     }
@@ -69,7 +70,7 @@ searchBar.on('focusout', function () {
         searchSubMenu.addClass('searchSubMenu_Hide');
 
         searchBarWrapper.removeClass('searchBarMiddle');
-        body.removeClass('bodyBGColor');
+        bgColor.addClass('bgColorHidden');
     } else {
         return false;
     }

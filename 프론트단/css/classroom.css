@@ -2,16 +2,24 @@
 /*===================================================*/
 /*classroom 해당 css*/
 
-/* html{
-    margin : 0;
-    padding : 0;
-} */
+body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
-
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+/* 실제 내용이 들어갈 영역 지정 */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
 }
 
 
@@ -22,7 +30,7 @@ a{
 .classroom{
     display: flex;
     flex-direction: row;
-    width : 100vw;
+    width : 100%;
     height: 100vh;
 
 }
@@ -31,7 +39,7 @@ a{
     display : flex;
     margin: 0;
     background-color: orange;
-    width : 80%;
+    flex-basis : 80%;
     height: 100vh;   
 }
 
@@ -40,8 +48,9 @@ a{
     display: flex;
     flex-direction: column;
     margin : 0;
+    width: 280px;
     background-color: rgb(216, 213, 213);
-    width: 20%;
+    flex-basis: 20%;
     padding : 15px 20px 15px 15px;
 }
 
@@ -52,11 +61,15 @@ a{
     padding-left: 0;   
 }
 
-.classroom_tabs > li {
+.classroom_tabs li {
     list-style : none;
     padding : 10px;
-    
 }
+
+.classroom_tabs li a:hover{
+    color: rgb(255, 142, 29);
+}
+
 
 
 
@@ -96,7 +109,7 @@ a{
 }
 
 /*강의 목차의 class 1-4 */
-.classroom_chater > li {
+.classroom_chater li {
     list-style : none;
 }
 
@@ -121,7 +134,7 @@ a{
 }
 
 /*down angle*/
-.title > div > i {
+.title>i {
     margin : 2px 0 0 0 ;
     color : rgb(138, 136, 136);
     font-size: 12px;
@@ -208,9 +221,10 @@ hr {
     justify-content: center;
     /* border: solid 2px red; */
     height : 600px;
-    width : 280px;
+    width : 100%;
     
 }
+
 
 
 
@@ -218,7 +232,7 @@ hr {
 .enterArea{
     display : flex;
     flex-direction: column;
-    width : 280px;
+    width : 100%;
     height: 500px;
     background-color: rgb(75, 74, 74);
     border-radius: 5px;
@@ -237,17 +251,21 @@ hr {
 
 
 /*'노트' 부분*/
-.outerWrapper > :nth-child(1) {
+.outerWrapper p{
+    margin-right: 165px;
+    white-space:nowrap;
+}
+/* .outerWrapper:nth-of-type(1) {
     font-size: 20px;
     padding : 10px;
-}
+} */
 
 /*카운트 되는 부분*/
-.outerWrapper > :nth-child(2), :nth-child(3){
+/* .outerWrapper:nth-of-type(2), :nth-of-type(3){
     padding-top: 13px;
     font-size: 15px;
-    /* color : white; */
-}
+    
+} */
 
 /*text 입력하는 부분*/
 .typeData {
@@ -272,11 +290,12 @@ hr {
     border : none;
     color : white;
     font-size: 15px;
+    cursor: pointer;
 }
 
 
 .subArea{
-    /* display: flex; */
+    /* display: flaex; */
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -296,6 +315,13 @@ hr {
     border-radius: 5px;
 
 }
+.notewrite{
+    background-color:rgb(255, 142, 29);
+    color:white;border:solid 1px rgb(255, 142, 29);
+    border-radius:5px;
+    cursor: pointer;
+}
+
 
 
 
@@ -317,7 +343,7 @@ hr {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     
-  
+    cursor: pointer;
 }
 
 /*text2: 수정된 노트가 출력되는 공간*/
@@ -349,6 +375,7 @@ hr {
     justify-content: center;
     align-items: center;
     margin : 10px;
+   
 }
 
 .slideArea {

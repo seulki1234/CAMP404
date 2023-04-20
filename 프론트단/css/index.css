@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
 * {
     box-sizing: border-box;
 }
 
+/* 전체 테두리 영역 지정 */
 body {
     display: flex;
     width: 100%;
@@ -15,6 +16,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+/* 실제 내용이 들어갈 영역 지정 */
 main {
     display: flex;
     flex-direction: column;
@@ -23,86 +25,187 @@ main {
     height: 100%;
 }
 
-.SlideImageContainer {
-    border: 1px solid black;
+/* ====================================================================== */
+/* 상단 슬라이드 이미지 영역 */
+/* 상단 슬라이드 이미지 */
+.setSlideArea {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 16.5px);
+    background-color: #1e1e1e;
+    margin-bottom: 40px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     /* background-image: */
     /* 오른쪽 -> 왼쪽 */
     /* linear-gradient(270deg, rgb(255, 255, 255) 0%, transparent 5%), */
     /* 왼쪽 -> 오른쪽 */
     /* linear-gradient(90deg, rgb(255, 255, 255) 0%, transparent 5%); */
-    display: flex;
-    justify-content: center;
-
-    margin-bottom: 40px;
 }
 
+
+.SlideImageContainer {
+    position: relative;
+    width: 1100px;
+    overflow: hidden;
+}
+
+/* 왼쪽 오른쪽 이동 버튼 */
 .slideBtn {
     position: absolute;
     margin: 0 auto;
-    z-index: 11;
+    z-index: 1;
     width: auto;
     display: flex;
-    top: 450px;
     color: white;
     font-size: 12px;
+    bottom: 20px;
+    left: 60px;
+}
+
+.leftBtn {
+    cursor: pointer;
+}
+
+.rightBtn {
+    cursor: pointer;
 }
 
 
 .slideBtn>div {
-    position: relative;
     left: -360px;
 }
 
+.moveNum {
+    padding: 10px;
+}
 
+.fixedNum {
+    padding: 10px;
+}
+
+/* 슬라이드 영역 지정. 총 4개이기 때문에 width가 4400px. */
 .slideImgHolder {
     display: flex;
-    width: 1100px;
+    width: 4400px;
     height: 400px;
-
+    transition: ease-in-out 0.3s;
+    transform: translateX(0px);
 }
+
 
 .slideContainer {
-    width: 300vw;
+    position: relative;
+    flex: 1;
 }
 
+/* 슬라이드 이미지 크기 지정 */
 .innerImg {
-    width: 100vh;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    -webkit-user-drag: none;
+    /* 클릭 후 넘기기를 위해 지정. */
 }
 
+/* 슬라이드 내부 텍스트 */
 .slideTitle {
     position: absolute;
     z-index: 1;
     width: auto;
     margin: auto;
-    top: 300px;
+    left: 50px;
+    bottom: 50px;
 }
 
 .slideTitle>span {
-    position: relative;
     display: flex;
-    left: 150px;
     margin-bottom: 15px;
+}
+
+/* 각 슬라이드 마다 다르게 글을 지정할 수 있기때문에 각 슬라이드마다 지정해둠. */
+/* 1번 슬라이드 */
+.slideTitle1-1 {
+    margin-left: 5px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.slideTitle1-2 {
+    font-size: 36px;
+    font-weight: bold;
     color: white;
 }
 
-.slideTitle1 {
+.slideTitle1-3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+
+/* 2번 슬라이드 */
+.slideTitle2-1 {
     margin-left: 5px;
 }
 
-.slideTitle2 {
+.slideTitle2-2 {
     font-size: 36px;
     font-weight: bold;
 }
 
-.slideTitle3 {
+.slideTitle2-3 {
     font-size: 36px;
     font-weight: bold;
 }
 
 
+/* 3번 슬라이드 */
+.slideTitle3-1 {
+    margin-left: 5px;
+    color: white;
+}
+
+.slideTitle3-2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.slideTitle3-3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
 
 
+/* 4번 슬라이드 */
+.slideTitle4-1 {
+    margin-left: 5px;
+}
 
+.slideTitle4-2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.slideTitle4-3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* 상단 슬라이드 이미지 영역 */
+
+/* ====================================================================== */
+
+/* 후기, 포트폴리오, 이벤트, 강사소개 영역 */
 .infoArea {
     display: flex;
     align-items: center;
@@ -117,9 +220,11 @@ main {
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 40px;
 
 }
 
+/* 각 항목별 사이즈 */
 .infoBoxes {
     display: flex;
     flex-direction: column;
@@ -133,6 +238,7 @@ main {
     text-decoration: none;
 }
 
+/* 위에있는 큰 텍스트 영역 */
 .innerUp {
     color: white;
     display: flex;
@@ -141,13 +247,18 @@ main {
     font-weight: bold;
 }
 
+/* 아래있는 작은 텍스트 영역 */
 .innerDown {
     color: white;
     font-size: 10px;
     font-weight: bold;
 }
 
+/* 후기, 포트폴리오, 이벤트, 강사소개 영역 */
 
+/* ====================================================================== */
+
+/* 회원 수 및 수업 수 영역*/
 .infoDown {
     flex: 5;
     display: flex;
@@ -172,7 +283,7 @@ main {
     align-items: center;
     font-weight: bolder;
     font-size: 18px;
-    padding-left: 25px;
+    padding-left: 15px;
     color: #717171;
 }
 
@@ -190,12 +301,11 @@ main {
     font-size: 72px;
     font-weight: bold;
     color: #fe6936;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .aDown3>span:nth-child(2) {
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 .aDown4 {
@@ -229,6 +339,10 @@ main {
     margin-left: 10px;
     font-size: 60px;
     color: rgb(130, 130, 130);
+}
+
+.aDown6>span:nth-child(2) {
+    font-size: 50px;
 }
 
 .infoDown2 {
@@ -271,9 +385,7 @@ main {
 
 .bDown5 {
     margin-left: 10px;
-    margin-bottom: 10px;
 }
-
 
 
 .infoDown3 {
@@ -285,6 +397,13 @@ main {
     height: 120px;
 }
 
+/* 회원 수 및 수업 수 영역*/
+
+/* ====================================================================== */
+
+/* 강의영역 */
+
+/* 강의영역 크기 설정 */
 .classWrapper {
     display: flex;
     flex-direction: column;
@@ -293,19 +412,31 @@ main {
     margin-bottom: 40px;
 }
 
+/* 강의명 */
 .classTitle {
     flex: 1;
     display: flex;
     align-items: center;
     font-size: 32px;
     color: #fe6936;
+    justify-content: space-between;
 }
 
-.classTitle>span:nth-child(1) {
+
+.classTitle1>span:nth-child(1) {
     font-weight: bold;
     padding-right: 5px;
 }
 
+/* 강의명 옆 더보기 */
+.classTitle2 {
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fe6936;
+}
+
+/* 강의 설명 */
 .classDescription {
     flex: 8;
     display: flex;
@@ -324,8 +455,8 @@ main {
 .classItem:hover {
     transition-property: all;
     transition-duration: 0.3s;
-    margin-bottom: 20px;
-    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    /* box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5); */
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -393,13 +524,21 @@ main {
     cursor: pointer;
 }
 
+.likeBtn>i:active {
+    outline: white;
+}
+
+.likeColor {
+    color: red;
+}
+
 .subText {
     width: 300px;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
     color: white;
     margin-bottom: 10px;
     line-height: 20px;
+    -webkit-text-stroke: 0.3px white;
 }
 
 .tutorTitle {
@@ -407,18 +546,28 @@ main {
     color: white;
 }
 
+/* 강의영역 크기 설정 */
+
+/* ====================================================================== */
+
+/* 중간 광고 영역1 */
+
 .middleAddArea {
+    position: relative;
     display: flex;
     align-items: center;
     height: 150px;
-    width: 100%;
     border-radius: 20px;
-    background-color: #161cff;
     margin-bottom: 40px;
+    width: 1100px;
+    overflow: hidden;
 }
 
 .middleAddItems {
+    z-index: 10;
+    position: absolute;
     height: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-left: 200px;
@@ -448,9 +597,215 @@ main {
     margin-left: 20px;
 }
 
+.middleCheckEvent {
+    display: flex;
+    justify-content: space-between;
+}
+
 .middleCheckEvent>a {
     text-decoration: none;
     color: #fe6936;
     font-size: 12px;
     font-weight: bold;
 }
+
+
+/* 중간 광고 슬라이드 영역 */
+
+.Middle_SlideBtn {
+    margin-right: 50px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    width: auto;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    right: 60px;
+    bottom: 15px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Middle_leftBtn {
+    cursor: pointer;
+}
+
+.Middle_rightBtn {
+    cursor: pointer;
+}
+
+
+.Middle_slideBtn>div {
+    left: -360px;
+}
+
+.Middle_moveNum {
+    padding: 10px;
+}
+
+.Middle_fixedNum {
+    padding: 10px;
+}
+
+.midde_SlideImgHolder {
+    display: flex;
+    position: relative;
+}
+
+.midde_SlideImgHolder {
+    display: flex;
+    width: 4400px;
+    height: 150px;
+    transition: ease-in-out 0.3s;
+    transform: translateX(0px);
+}
+
+.midde_SlideContainer {
+    position: relative;
+    flex: 1;
+}
+
+/* 슬라이드 이미지 크기 지정 */
+.midde_InnerImg {
+    border: none;
+    outline: none;
+    -webkit-user-drag: none;
+    /* 클릭 후 넘기기를 위해 지정. */
+}
+
+/* 중간 광고 영역1*/
+
+/* ====================================================================== */
+
+/* 중간 광고 영역2 */
+
+.middleAddArea2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    width: 1100px;
+    overflow: hidden;
+}
+
+.middleAddItems2 {
+    z-index: 10;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+    flex-direction: column;
+}
+
+.middleAddItems2>span {
+    font-size: 10px;
+    color: white;
+}
+
+.middleAddItems2>span:first-child {
+    margin-bottom: 5px;
+}
+
+.middleLogoWrapper2 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.middleLogoWrapper2>span {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+
+.middleCheckEvent2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middleCheckEvent2>a {
+    text-decoration: none;
+    color: #fe6936;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* 중간 광고 슬라이드 영역 */
+
+.Middle_SlideBtn2 {
+    margin-right: 50px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    width: auto;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    right: 60px;
+    bottom: 15px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Middle_leftBtn2 {
+    cursor: pointer;
+}
+
+.Middle_rightBtn2 {
+    cursor: pointer;
+}
+
+
+.Middle_slideBtn2>div {
+    left: -360px;
+}
+
+.Middle_moveNum2 {
+    padding: 10px;
+}
+
+.Middle_fixedNum2 {
+    padding: 10px;
+}
+
+.midde_SlideImgHolder2 {
+    display: flex;
+    position: relative;
+}
+
+.midde_SlideImgHolder2 {
+    display: flex;
+    width: 4400px;
+    height: 150px;
+    transition: ease-in-out 0.3s;
+    transform: translateX(0px);
+}
+
+.midde_SlideContainer2 {
+    position: relative;
+    flex: 1;
+}
+
+/* 슬라이드 이미지 크기 지정 */
+.midde_InnerImg2 {
+    border: none;
+    outline: none;
+    -webkit-user-drag: none;
+    /* 클릭 후 넘기기를 위해 지정. */
+}
+
+/* 중간 광고 영역2 */

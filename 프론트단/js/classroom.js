@@ -55,7 +55,9 @@ $(document).ready(function() {
 
 /*상단의 강의목차 클릭시 다른메뉴 hide, 강의목차 관련 메뉴 show */
 $('#classroom_tabs_menu').click(function(){
+ 
   $('.classroom_chater').show();/*강의목차 show */
+  
   $('.classroom_asset_list').hide();/*강의자료 hide */
   $('.classroom_notes').hide();
   $('.subArea').hide();  /*저장된 강의노트목록 hide */
@@ -68,6 +70,7 @@ $('#classroom_tabs_menu').click(function(){
 /*상단의 강의자료 클릭시 강의목차 hide, 강의자료 관련 메뉴 show */
 $('#classroom_tabs_file').click(function(){
   $('.classroom_asset_list').show();/*강의자료 show */
+  
   $('.classroom_chater').hide();/*강의목차 hide */  
   $('.classroom_notes').hide();/*강의노트 hide */
   $('.subArea').hide();  /*저장된 강의노트목록 hide */
@@ -82,6 +85,7 @@ $('#classroom_tabs_file').click(function(){
    todolist*/
    $('#classroom_tabs_note').click(function(){
     $('.classroom_notes').show();/*강의노트 show */
+   
     $('.classroom_chater').hide();/*강의목차 hide */  
     $('.classroom_asset_list').hide();/*강의자료 hide */ 
     $('.subArea').hide();  /*저장된 강의노트목록 hide */
@@ -122,8 +126,7 @@ $('.subArea').hide();/*저장된 강의노트 목록 show */
   const subArea = document.querySelector('.subArea');//작성한노트 출력공간
   let count = 0;
   const arr1 = [];
-  const counterOuter = document.querySelector('.counterOuter');//노트 글자수카운트
-  const counter = document.querySelector('.counter')
+  const counterOuter = document.querySelector('.counterOuter');//글자수카운트
 
   //추가버튼 눌렀을 때 실행될 함수
   function setToDo(a){
@@ -144,13 +147,16 @@ $('.subArea').hide();/*저장된 강의노트 목록 show */
           <span class="text1"></span>            
           <span class="change"><i class="fa-solid fa-check"></i></span>
           <span class="remove"><i class="fa-sharp fa-solid fa-trash"></i></span>
-          <button class="notewrite">글작성1</button>
+          <button class="notewrite">글작성</button>
+           
+           
+        
       </div>
 
       <div class="slideWrapper">
-           <p>
-              <span class="enterDate"></span>
-           </P>
+          <p>
+          <span class="enterDate"></span>
+          </p>
            
           <div class = "slideArea">
               
@@ -163,7 +169,7 @@ $('.subArea').hide();/*저장된 강의노트 목록 show */
       
       <div class="writeWrapper">
       <span class="text1"></span>     
-      <button class="notewrite">글작성2</button>
+      <button class="notewrite">글작성</button>
       </div>
     `;
 
@@ -276,7 +282,32 @@ $('.counterOuter').text($(e.target).val().length);
 })
 
 
-
+///////목록 포커스
+$('document').ready(function(){
+ 
+  $('#classroom_tabs_menu').focus(function(){
+      $(this).css("color","rgb(255, 142, 29)");
+    });
+      $("#classroom_tabs_menu").blur(function(){ 
+      $(this).css("color","rgb(146, 145, 145)");
+    });
+    
+  $('#classroom_tabs_file').focus(function(){
+      $(this).css("color","rgb(255, 142, 29)");
+      $('#classroom_tabs_menu').css("color","rgb(146, 145, 145)")
+    });
+      $("#classroom_tabs_file").blur(function(){ 
+      $(this).css("color","rgb(146, 145, 145)");
+    });
+    
+  $('#classroom_tabs_note').focus(function(){
+      $(this).css("color","rgb(255, 142, 29)");
+      $('#classroom_tabs_menu').css("color","rgb(146, 145, 145)")
+    });
+      $("#classroom_tabs_note").blur(function(){ 
+      $(this).css("color","rgb(146, 145, 145)");
+    });
+})
 
 
 

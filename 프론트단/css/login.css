@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
 
-.main{
-    height: auto;
-    min-height: 100%;
-    width: 100vw;
-}
+
 *:focus{
     outline: 0;
 }
 body{
     font-size: 14px;
     font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     background-color: black;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    
+    height: 1100px;
+    
+    width: 100vw;
 }
 .login-container{
     display: flex;
@@ -21,11 +27,9 @@ body{
     height: 450px;
     
     box-sizing: border-box;
-    position: absolute;
-    left:50%;
-    top:50%;
-    margin-left:-250px;
-    margin-top:-180px;
+   
+    margin: 100px auto;
+    
     padding: 10px;
 
     background-color: white;
