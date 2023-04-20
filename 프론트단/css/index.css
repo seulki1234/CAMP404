@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
 * {
@@ -34,6 +34,11 @@ main {
     width: calc(100vw - 16.5px);
     background-color: #1e1e1e;
     margin-bottom: 40px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     /* background-image: */
     /* 오른쪽 -> 왼쪽 */
     /* linear-gradient(270deg, rgb(255, 255, 255) 0%, transparent 5%), */
@@ -278,7 +283,7 @@ main {
     align-items: center;
     font-weight: bolder;
     font-size: 18px;
-    padding-left: 25px;
+    padding-left: 15px;
     color: #717171;
 }
 
@@ -296,12 +301,11 @@ main {
     font-size: 72px;
     font-weight: bold;
     color: #fe6936;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .aDown3>span:nth-child(2) {
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 .aDown4 {
@@ -335,6 +339,10 @@ main {
     margin-left: 10px;
     font-size: 60px;
     color: rgb(130, 130, 130);
+}
+
+.aDown6>span:nth-child(2) {
+    font-size: 50px;
 }
 
 .infoDown2 {
@@ -377,7 +385,6 @@ main {
 
 .bDown5 {
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 
@@ -448,8 +455,8 @@ main {
 .classItem:hover {
     transition-property: all;
     transition-duration: 0.3s;
-    margin-bottom: 20px;
-    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    /* box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5); */
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -539,18 +546,28 @@ main {
     color: white;
 }
 
+/* 강의영역 크기 설정 */
+
+/* ====================================================================== */
+
+/* 중간 광고 영역1 */
+
 .middleAddArea {
+    position: relative;
     display: flex;
     align-items: center;
     height: 150px;
-    width: 100%;
     border-radius: 20px;
-    background-color: #161cff;
     margin-bottom: 40px;
+    width: 1100px;
+    overflow: hidden;
 }
 
 .middleAddItems {
+    z-index: 10;
+    position: absolute;
     height: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-left: 200px;
@@ -580,6 +597,11 @@ main {
     margin-left: 20px;
 }
 
+.middleCheckEvent {
+    display: flex;
+    justify-content: space-between;
+}
+
 .middleCheckEvent>a {
     text-decoration: none;
     color: #fe6936;
@@ -587,7 +609,203 @@ main {
     font-weight: bold;
 }
 
-.footer_customer_box:hover {
+
+/* 중간 광고 슬라이드 영역 */
+
+.Middle_SlideBtn {
+    margin-right: 50px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    width: auto;
+    display: flex;
     color: white;
-    background-color: #fe6936;
+    font-size: 12px;
+    right: 60px;
+    bottom: 15px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
+
+.Middle_leftBtn {
+    cursor: pointer;
+}
+
+.Middle_rightBtn {
+    cursor: pointer;
+}
+
+
+.Middle_slideBtn>div {
+    left: -360px;
+}
+
+.Middle_moveNum {
+    padding: 10px;
+}
+
+.Middle_fixedNum {
+    padding: 10px;
+}
+
+.midde_SlideImgHolder {
+    display: flex;
+    position: relative;
+}
+
+.midde_SlideImgHolder {
+    display: flex;
+    width: 4400px;
+    height: 150px;
+    transition: ease-in-out 0.3s;
+    transform: translateX(0px);
+}
+
+.midde_SlideContainer {
+    position: relative;
+    flex: 1;
+}
+
+/* 슬라이드 이미지 크기 지정 */
+.midde_InnerImg {
+    border: none;
+    outline: none;
+    -webkit-user-drag: none;
+    /* 클릭 후 넘기기를 위해 지정. */
+}
+
+/* 중간 광고 영역1*/
+
+/* ====================================================================== */
+
+/* 중간 광고 영역2 */
+
+.middleAddArea2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    width: 1100px;
+    overflow: hidden;
+}
+
+.middleAddItems2 {
+    z-index: 10;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+    flex-direction: column;
+}
+
+.middleAddItems2>span {
+    font-size: 10px;
+    color: white;
+}
+
+.middleAddItems2>span:first-child {
+    margin-bottom: 5px;
+}
+
+.middleLogoWrapper2 {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.middleLogoWrapper2>span {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+}
+
+.middleCheckEvent2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middleCheckEvent2>a {
+    text-decoration: none;
+    color: #fe6936;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* 중간 광고 슬라이드 영역 */
+
+.Middle_SlideBtn2 {
+    margin-right: 50px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 1;
+    width: auto;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    right: 60px;
+    bottom: 15px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.Middle_leftBtn2 {
+    cursor: pointer;
+}
+
+.Middle_rightBtn2 {
+    cursor: pointer;
+}
+
+
+.Middle_slideBtn2>div {
+    left: -360px;
+}
+
+.Middle_moveNum2 {
+    padding: 10px;
+}
+
+.Middle_fixedNum2 {
+    padding: 10px;
+}
+
+.midde_SlideImgHolder2 {
+    display: flex;
+    position: relative;
+}
+
+.midde_SlideImgHolder2 {
+    display: flex;
+    width: 4400px;
+    height: 150px;
+    transition: ease-in-out 0.3s;
+    transform: translateX(0px);
+}
+
+.midde_SlideContainer2 {
+    position: relative;
+    flex: 1;
+}
+
+/* 슬라이드 이미지 크기 지정 */
+.midde_InnerImg2 {
+    border: none;
+    outline: none;
+    -webkit-user-drag: none;
+    /* 클릭 후 넘기기를 위해 지정. */
+}
+
+/* 중간 광고 영역2 */

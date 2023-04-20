@@ -20,7 +20,7 @@
         <div data-include1="header" id="header"></div>
     </header>
     <main>
-
+        <div data-inclued2="Q&ABtn" id="Q&ABtn"></div>
 
 
 
@@ -151,16 +151,19 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            var include1 = $('[data-include1="header"]');
-
-            jQuery.each(include1, function () {
-
-                $(this).load('/html/header.html');
+        <script>
+            $(function () {
+                var include1 = $('[data-include1="header"]');
+                var include2 = $('[data-inclued2="Q&ABtn"]');
+                jQuery.each(include1, function () {
+                    $(this).load('/html/header.html');
+                });
+                jQuery.each(include2, function () {
+                    $(this).load('/html/Q&ABtn.html');
+                });
             });
-        });
-    </script>
+    
+        </script>
 </body>
 
 </html>
