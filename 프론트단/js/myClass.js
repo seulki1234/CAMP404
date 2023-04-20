@@ -9,3 +9,10 @@ goClass.addEventListener("mouseover", function() {
 goClass.addEventListener("mouseleave", function() {
     index.style.color = "#cecece";
 })
+
+
+const inputClass = document.querySelector(".inputClass");
+
+inputClass.addEventListener("focus", ()=> {
+    inputClass.style.border="1px solid oragne";
+})

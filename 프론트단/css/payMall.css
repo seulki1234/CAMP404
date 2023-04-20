@@ -1,68 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    width: 100%;
+    display: flex;
 }
 
-main {
+.myClass-container {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-main > div{
+/*body-nav*/
+.myClass-container nav:nth-child(1) {
     width: 30%;
     height: 970px;
     background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* <nav> 안녕하세요. 김철수님 [전체] */
+.myClass-summary-container {
+    width: 80%;
+    height: 780px;
+}
+
+/* 안녕하세요. ~님 글자 영역 */
+.myClass-hiUser {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+    /*font */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333333;
+    /*안녕하세요 * 님 폰트 크기, 행간 조절*/
+    letter-spacing: -0.5px;
+    line-height: 37px;
+}
+
+/*가명: 김철수님*/
+.userName {
+    color: #fe6936;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* 나의강의장, 찜목록, 정보수정 버튼 */
+.myClass-content-container {
+    width: 100%;
+}
+
+/* 버튼영역 */
+.content-1 {
+    width: 90%;
+    height: 60px;
+
+    background-color: #333333;
+    margin-bottom: 10px;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    cursor: pointer;
+
+}
+
+.content-1:hover {
+    background-color: #fe6936;
+    font-weight: bolder;
+
+    box-shadow: 0px 0px 8px #9f9f9f;
+    transition-duration: 0.2s;
+}
+
+.content-1 span{
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.content-1 i{
+    color: white;
+    margin-right: 20px;
+}
+
+/* 로그아웃버튼 */
+.logout-btn{
+    color: #fe6936;
+    background-color: transparent;
+    border: 0 none;
+    margin-left: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+    font-weight: 550;
+}
+
+/*------------------body-content------------------*/
+/* 총 결제금액 */
+
+/* 찜목록: 제목 */
+#payment_container{
+    width: 70%;
+    height: 100%;
+}
+#check_payment_container{
+    width: 100%;
+    height: 230px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
-/* 결제 정보 */
-#pay-container > div{
-    width: 80%;
-    height: 970px;
-    margin-left: 90px;
+.total{
+    width: 70%;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color: #333333;
+    padding: 30px;
+}
+.paymnetBtn_container{
+    margin-top: 30px;
+    width: 70%;
+}
+.paymentBtn{
+    width: 100%;
+    height: 50px;
+    background-color: #fe6936;
 }
 
-.payment-info{
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-top: 100px;
-}
-/* 지불정보_title */
-.payment-info > h3 {
-    font-size: 30px;
-    font-weight: 700;
-    color: #333333;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: -0.5px;
-    line-height: 37px;
-    margin-bottom: 30px;
+#wish_list_container div:nth-child(1){
+    margin-top: 2rem;
+    margin-bottom: 10px;
+    padding: 2rem 4rem 2.5rem 4rem;
+
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .empty-line{
     display: block;
     height: 1.05rem;
     line-height: 5px;
-    border-bottom: 0.5px solid #333333;
+    border-bottom: 1.5px solid #9f9f9f;
+    
+    margin-bottom: 30px;
 }
-.line2{
-    border-bottom: 2px solid #333333;
-}
-/* 결제목록 */
-.payment-content{
-    font-size: 0.95rem;
-}
-.payment-content ul {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-.payment-content ul li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+/* 찜목록: 상세 */
+#myInfo_check_container{
+    width: 100%;
+    height: 70%;
+    background-color: #e4e4e4;
 }
