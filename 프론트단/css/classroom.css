@@ -2,9 +2,16 @@
 /*===================================================*/
 /*classroom 해당 css*/
 
-html{
+/* html{
     margin : 0;
     padding : 0;
+} */
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -274,12 +281,11 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(138, 136, 136);
+    
 }
 
 .addArea{
     display: flex;
-    /* display: none; */
     justify-content: center;
     align-items: center;
     width: 250px;
@@ -287,32 +293,53 @@ hr {
     background-color: rgb(75, 74, 74);
     color : white;
     margin : 10px;
+    border-radius: 5px;
 
 }
 
 
 
-/*다시볼부분-------------------------------*/
 
-/*text1:입력한값 출력되는 공간*/
+
+
+
+
+
+/*text1:작성한 노트가 출력되는 공간*/
 .text1 {
     flex: 1;
     margin: 10px;
     outline: none;
     border: none;
-    border-radius: 10px;
+    overflow: hidden;
+    height: 1em;
+    color : white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  
 }
 
+/*text2: 수정된 노트가 출력되는 공간*/
 .text2 {
-    width: 200px;
+    /* position : relative; */
+    flex : 1;
+    width: 250px;
     height: 100px;
-    line-height: 50px;
+    padding: 10px;
     outline: none;
     border: none;
+    overflow: auto;
+    border-radius: 5px;
+    background-color: rgb(75, 74, 74);
+    color : white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    padding: 30px 0;
-    border-radius: 10px;
-    padding-left: 20px;
+
+.enterDate{
+    margin : 5px;
 }
 
 
@@ -321,33 +348,16 @@ hr {
     position: relative;
     justify-content: center;
     align-items: center;
+    margin : 10px;
 }
 
 .slideArea {
     display: none;
+    border-left : 10px;
 }
 
-
-
-.testArea {
-    /* 해당 항목은 공백 채우기용. */
+.remove , .change , .store {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    width: 600px;
-    height: 50px;
-}
-
-
-.remove, .change {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid black; */
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
     padding : 5px;
     margin : 5px;
     cursor: pointer;
@@ -359,32 +369,17 @@ hr {
 
 .enterDate {
     position: absolute;
-    bottom: 10px;
+    margin : 10px;
+    bottom: 5px;
     right: 40px;
     font-size: 12px;
+    color: white;;
+}
+
+.write{
+    width: 100px;
+    color : red;
 }
 
 
-.counterWrapper {
-    position: absolute;
-    right: 50px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    height: fit-content;
-}
-
-
-
-.clear .text1,
-.clear .text2 {
-    color: #ddd;
-    text-decoration: line-through;
-    background-color: grey !important;
-}
-
-
-.hide {
-    display: none;
-}
 
