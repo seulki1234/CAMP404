@@ -1,46 +1,25 @@
-// const goClass =document.querySelector(".goClass").get();
-// const index = document.querySelector(".classIndex").get();
+// const goClass = document.querySelector(".goClass");
+// const index = document.querySelector(".classIndex");
 
-// goClass.addEventListener("mouseover",changeColor);
-// goClass.addEventListener("mouseleave",changeColor);
-
-
-// function changeColor(e){
-//     for(var i =0; i<goClass.length;i++){
-//         if (e.type === 'mouseover'){
-//             index[i].style.color="rgb(255, 142, 29)";
-//         } else if(e.type ==='mouseleave'){
-//             index[i].style.color="white";
-//         }
-//     }
-// }
 
 // goClass.addEventListener("mouseover", function() {
-//     for(var i =0; i<goClass.length;i++){
-//     index[i].style.color = "rgb(255, 142, 29)";
-// }
+
+//     index.style.color = "#fe6936";
 // })
 // goClass.addEventListener("mouseleave", function() {
-//     for(var i =0; i<goClass.length;i++){
-//     index[i].style.color = "white";
-//     }
+//     index.style.color = "#cecece";
 // })
-$(document).ready(function(){
-    var goClass =$('.goClass').get();
-    var index =$('.classIndex').get();
-    if(goClass.addEventListener("mouseover")){
-    for(var i = 0; i<goClass.length; i++){
-        
-            index[i].css("color","rgb(255, 142, 29)")
-       
-    }
-}
-
-})
+const goClass = document.querySelectorAll(".goClass");
+const index = document.querySelectorAll(".classIndex");
 
 
-    // $(".goClass").hover(function(){
-    //     $(".classIndex").css("color","rgb(255, 142, 29)")
-   
-    // })
+for (let i = 0; i < goClass.length; i++) {
+    let classes = goClass[i];
+    classes.addEventListener("mouseover", function () {
 
+        index[i].style.color = "#fe6936";
+    })
+    classes.addEventListener("mouseleave", function () {
+        index[i].style.color = "#cecece";
+    })
+};

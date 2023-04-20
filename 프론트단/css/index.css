@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
 * {
@@ -34,6 +34,11 @@ main {
     width: calc(100vw - 16.5px);
     background-color: #1e1e1e;
     margin-bottom: 40px;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     /* background-image: */
     /* 오른쪽 -> 왼쪽 */
     /* linear-gradient(270deg, rgb(255, 255, 255) 0%, transparent 5%), */
@@ -278,7 +283,7 @@ main {
     align-items: center;
     font-weight: bolder;
     font-size: 18px;
-    padding-left: 25px;
+    padding-left: 15px;
     color: #717171;
 }
 
@@ -296,12 +301,11 @@ main {
     font-size: 72px;
     font-weight: bold;
     color: #fe6936;
-    padding-left: 25px;
+    padding-left: 15px;
 }
 
 .aDown3>span:nth-child(2) {
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 .aDown4 {
@@ -451,8 +455,8 @@ main {
 .classItem:hover {
     transition-property: all;
     transition-duration: 0.3s;
-    margin-bottom: 20px;
-    box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    /* box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5); */
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -619,7 +623,11 @@ main {
     font-size: 12px;
     right: 60px;
     bottom: 15px;
-
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .Middle_leftBtn {
@@ -746,7 +754,11 @@ main {
     font-size: 12px;
     right: 60px;
     bottom: 15px;
-
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .Middle_leftBtn2 {
