@@ -61,7 +61,7 @@ $('#classroom_tabs_menu').click(function(){
   $('.classroom_asset_list').hide();/*강의자료 hide */
   $('.classroom_notes').hide();
   $('.subArea').hide();  /*저장된 강의노트목록 hide */
-  $('.writeButton').hide();  /*글작성버튼 hide */
+  $('.noteWrite').hide();  /*글작성버튼 hide */
 
   
 })
@@ -74,7 +74,7 @@ $('#classroom_tabs_file').click(function(){
   $('.classroom_chater').hide();/*강의목차 hide */  
   $('.classroom_notes').hide();/*강의노트 hide */
   $('.subArea').hide();  /*저장된 강의노트목록 hide */
-  $('.writeButton').hide();  /*글작성버튼 hide */
+  $('.noteWrite').hide();  /*글작성버튼 hide */
   
 })
 
@@ -85,10 +85,10 @@ $('#classroom_tabs_file').click(function(){
    todolist*/
    $('#classroom_tabs_note').click(function(){
     $('.classroom_notes').show();/*강의노트 show */
-   
     $('.classroom_chater').hide();/*강의목차 hide */  
     $('.classroom_asset_list').hide();/*강의자료 hide */ 
     $('.subArea').hide();  /*저장된 강의노트목록 hide */
+    $('.noteWrite').hide();  /*글작성버튼 hide */
   
   })
 
@@ -99,16 +99,18 @@ $('.classroom_notes').hide();/*강의노트 hide */
 $('.classroom_chater').hide();/*강의목차 hide */  
 $('.classroom_asset_list').hide();/*강의자료 hide */   
 $('.subArea').show();/*저장된 강의노트 목록 show */
+$('.noteWrite').show();  /*글작성버튼 hide */
 
 })
 
 
 //글 작성하기 버튼 클릭시 노트작성 영역만 show , 나머지 hide 
-$('.notewrite').click(function(){
+$('.noteWrite').click(function(){
 $('.classroom_notes').show();/*강의노트 hide */
 $('.classroom_chater').hide();/*강의목차 hide */  
 $('.classroom_asset_list').hide();/*강의자료 hide */   
 $('.subArea').hide();/*저장된 강의노트 목록 show */ 
+$('.noteWrite').hide();  /*글작성버튼 hide */
 
 })
 
@@ -146,8 +148,8 @@ $('.subArea').hide();/*저장된 강의노트 목록 show */
     addWrapper.innerHTML = `
       <div class = "addArea">
           <span class="text1"></span>            
-          <span class="change"><i class="fa-solid fa-check"></i></span>
-          <span class="remove"><i class="fa-sharp fa-solid fa-trash"></i></span>
+          <span class="change">수정</span>
+          <span class="remove">삭제</span>
           <button class="notewrite">글작성</button>
            
            
@@ -166,13 +168,17 @@ $('.subArea').hide();/*저장된 강의노트 목록 show */
                   <span class="counter">${typeData.value.length}</span> / 2000
               </div>
           </div>
+
       </div>
+  
       
-      <div class="writeWrapper">
-      <span class="text1"></span>     
-      <button class="notewrite">글작성</button>
-      </div>
     `;
+
+  //   <div class="writeWrapper">
+  //   <span class="text1"></span>     
+  //  <button class="notewrite">글작성</button>
+  //  </div> 
+
 
 
 

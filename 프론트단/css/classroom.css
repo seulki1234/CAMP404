@@ -255,17 +255,7 @@ hr {
     margin-right: 165px;
     white-space:nowrap;
 }
-/* .outerWrapper:nth-of-type(1) {
-    font-size: 20px;
-    padding : 10px;
-} */
 
-/*카운트 되는 부분*/
-/* .outerWrapper:nth-of-type(2), :nth-of-type(3){
-    padding-top: 13px;
-    font-size: 15px;
-    
-} */
 
 /*text 입력하는 부분*/
 .typeData {
@@ -293,6 +283,31 @@ hr {
     cursor: pointer;
 }
 
+/*노트작성버튼(하단 버튼)*/
+.noteWrite{
+    display: none;
+    
+    align-items: center;
+    justify-content: center;
+    position : fixed;
+    right : 25px;
+    bottom : 50px;
+
+    width : 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: orange;
+    color : white;
+    border : none;
+    font-size : 30px;
+    cursor : pointer;
+}
+
+
+
+
+
 
 .subArea{
     /* display: flaex; */
@@ -315,12 +330,7 @@ hr {
     border-radius: 5px;
 
 }
-.notewrite{
-    background-color:rgb(255, 142, 29);
-    color:white;border:solid 1px rgb(255, 142, 29);
-    border-radius:5px;
-    cursor: pointer;
-}
+
 
 .writeWrapper{
     display : flex;
