@@ -398,3 +398,4 @@ btntest.addEventListener('mouseover', changeColor);
 btntest.addEventListener('mouseleave', changeColor);
 
 // 트랜지션때 for문으로 작업함.
+
