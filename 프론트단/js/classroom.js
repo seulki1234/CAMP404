@@ -141,30 +141,42 @@ $('.noteWrite').hide();  /*글작성버튼 hide */
                  //p (enterDate-수정된날짜)
                  //slideArea(수정할수 잇는 노트부분을 감싸는 영역)
     addWrapper.innerHTML = `
-      <div class = "addArea">
-          <span class="text1"></span>          
-          <span class="change">수정</span>
-          <span class="remove">삭제</span>
-          <span class="down"><i class="fa-solid fa-angle-down"></i></span>  
-      </div>
+   
+    <div class = "addArea">
+    <span class="text1"></span>          
+    <span class="change">수정</span>
+    <span class="remove">삭제</span>
+    <span class="down"><i class="fa-solid fa-angle-down"></i></span>  
+</div>
 
-      <div class="slideWrapper">
-           <p>
-            <span class="enterDate"></span>
+<div class="slideWrapper">
+
+    <div class="slideArea">
+        <textarea class="text2"></textarea>
+        <div>
+            <p>
+               <span class="enterDate">23.04.21</span>
             </p>
 
-            
-           
-           <div class="slideArea">
-              <textarea class="text2">
+            <div>
               <span class="change">수정</span>
-          </div>
+              <span class="remove">삭제</span>
+            </div>
+        
+        </div>
+        
+        
+   
+          
+    </div>
 
-      </div>
-  
+</div>
       
     `;
 
+    // <p>
+    // <span class="enterDate"></span>
+    // </p>
 
     // <div class="counterWrapper">
     //               <span class="counter">${typeData.value.length}</span> / 2000
