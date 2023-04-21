@@ -113,60 +113,82 @@ main{
 
 /*------------------body-content------------------*/
 /* 총 결제금액 */
-
-/* 찜목록: 제목 */
 #payment_container{
     width: 70%;
-    height: 100%;
+    height: 970px;
 }
 #check_payment_container{
     width: 100%;
-    height: 230px;
+    height: 25%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+/* 총 결제금액 */
 .total{
-    width: 70%;
+    width: 65%;
     font-size: 40px;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #333333;
     padding: 30px;
 }
+/* 결제하기 버튼 */
 .paymnetBtn_container{
     margin-top: 30px;
-    width: 70%;
+    width: 100%;
 }
 .paymentBtn{
-    width: 100%;
-    height: 50px;
     background-color: #fe6936;
+    padding: 17px 100px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+ 
 }
+/* 찜목록 */
+#wish_list_container{
+    width: auto;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
 
-#wish_list_container div:nth-child(1){
-    margin-top: 2rem;
-    margin-bottom: 10px;
-    padding: 2rem 4rem 2.5rem 4rem;
-
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Noto Sans KR', sans-serif;
 }
-.empty-line{
-    display: block;
+/* 찜목록 제목 부분 */
+.wish_list_content{
+    height: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wish_list_content div:first-child{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+.wish_list_content div:last-child{
     height: 1.05rem;
     line-height: 5px;
-    border-bottom: 1.5px solid #9f9f9f;
-    
-    margin-bottom: 30px;
+    border-bottom: 1.5px solid #333333;
 }
-/* 찜목록: 상세 */
-#myInfo_check_container{
-    width: 100%;
+/* 찜목록 상세 리스트  */
+.wish_list{
     height: 70%;
-    background-color: #e4e4e4;
+    display: flex;
+    flex-direction: row;
+}
+
+.wish_list div:first-child{
+    width: 30%;
+    background-color: aqua;
+}
+.wish_list div:last-child{
+    width: 70%;;
+    background-color: #fe6936;
 }
