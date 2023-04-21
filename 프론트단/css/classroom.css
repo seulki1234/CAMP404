@@ -1,6 +1,6 @@
 
 /*===================================================*/
-/*classroom 해당 css*/
+/*classroom 해당 css css*/
 
 body {
     display: flex;
@@ -47,7 +47,7 @@ a{
 .classroom_sidebar{
     display: flex;
     flex-direction: column;
-    margin : 0;
+    margin : 0 auto;
     width: 280px;
     background-color: rgb(216, 213, 213);
     flex-basis: 20%;
@@ -66,7 +66,8 @@ a{
     padding : 10px;
 }
 
-.classroom_tabs li a:hover{
+.classroom_tabs li a:hover,
+.classroom_tabs li a:focus{
     color: rgb(255, 142, 29);
 }
 
@@ -219,9 +220,10 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: solid 2px red; */
-    height : 600px;
-    width : 100%;
+    margin : 10px auto;
+    /* border : 2px solid blue; */
+    /* height : 600px;
+    width : 100%; */
     
 }
 
@@ -233,7 +235,7 @@ hr {
     display : flex;
     flex-direction: column;
     width : 100%;
-    height: 500px;
+    height: 510px;
     background-color: rgb(75, 74, 74);
     border-radius: 5px;
 }
@@ -243,29 +245,29 @@ hr {
     display : flex;
     flex-direction: row;
     background-color: rgb(75, 74, 74);
-    padding-right: 0;
-    margin : 5px;
+    /* padding-right: 0; */
+    /* margin : 5px; */
+    margin : auto 0;
     border-radius: 5px;
     color : white;
-}
-
-
-/*'노트' 부분*/
-.outerWrapper p{
-    margin-right: 165px;
-    white-space:nowrap;
-}
-/* .outerWrapper:nth-of-type(1) {
-    font-size: 20px;
-    padding : 10px;
-} */
-
-/*카운트 되는 부분*/
-/* .outerWrapper:nth-of-type(2), :nth-of-type(3){
-    padding-top: 13px;
-    font-size: 15px;
+    justify-content: right;
     
-} */
+}
+
+
+/*숫자 카운트 부분*/
+.counterOuter {
+    margin : 10px;
+    /* white-space:nowrap; */
+}
+
+/* '/2000' */
+.outerWrapper :nth-child(2) {
+    margin : 10px 10px 10px 0;
+    /* white-space:nowrap; */
+    justify-content: right;    
+}
+
 
 /*text 입력하는 부분*/
 .typeData {
@@ -278,33 +280,72 @@ hr {
 }
 
 /*저장버튼*/
+
+.downFunction{
+    width : 100%;
+    margin: 10px auto;
+    /* padding :  0; */
+}
+
+
 .dBtn{
     align-items: center;
     justify-content: center;
-    padding : 10px;
-    width : 280px;
+    width : 100%;
     height : 50px;
-    margin : 10px;
-    background-color: rgb(252, 39, 39);
+     
+    background-color: rgb(253, 186, 62);
     border-radius: 5px;
     border : none;
     color : white;
     font-size: 15px;
-    cursor: pointer;
+    cursor: pointer;  
+}
+
+.downFunction :hover{
+    background-color: rgb(255, 142, 29);
+}
+
+/*노트작성버튼(하단 버튼)*/
+.noteWrite{
+    display: none;
+    
+    align-items: center;
+    justify-content: center;
+    position : fixed;
+    right : 25px;
+    bottom : 50px;
+
+    width : 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: orange;
+    color : white;
+    border : none;
+    font-size : 30px;
+    cursor : pointer;
 }
 
 
+
+
+
+
 .subArea{
-    /* display: flaex; */
+    /* display: flex; */
     display: none;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center;
+    border : solid 2px yellow; */
+    margin : 0 auto;
     
 }
 
 .addArea{
     display: flex;
+
     justify-content: center;
     align-items: center;
     width: 250px;
@@ -315,20 +356,6 @@ hr {
     border-radius: 5px;
 
 }
-.notewrite{
-    background-color:rgb(255, 142, 29);
-    color:white;border:solid 1px rgb(255, 142, 29);
-    border-radius:5px;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
 
 
 /*text1:작성한 노트가 출력되는 공간*/
@@ -364,8 +391,15 @@ hr {
 }
 
 
-.enterDate{
-    margin : 5px;
+.enterDate {
+    position: absolute;
+
+    margin : 10px;
+    /* padding : 10px; */
+    bottom: 5px;
+    left: 10px;
+    font-size: 12px;
+    color: white;
 }
 
 
@@ -383,30 +417,20 @@ hr {
     border-left : 10px;
 }
 
-.remove , .change , .store {
+.remove , .change, .down  {
     display: flex;
     padding : 5px;
-    margin : 5px;
+    margin-right : 10px;
     cursor: pointer;
-    font-size: 10px;
-}
-
-
-
-
-.enterDate {
-    position: absolute;
-    margin : 10px;
-    bottom: 5px;
-    right: 40px;
     font-size: 12px;
-    color: white;;
 }
 
-.write{
-    width: 100px;
-    color : red;
-}
+
+
+
+
+
+
 
 
 
