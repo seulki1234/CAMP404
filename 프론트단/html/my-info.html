@@ -16,37 +16,32 @@
         <div data-include1="header" id="header"></div>
     </heder>
     <mian>
-        
-        <div class="bodyContainer">
-            <nav class="nav-Area">
-                <div class="summary-Container">
+        <div data-inclued2="Q&ABtn" id="Q&ABtn"></div>
+        <div class="myClass-container">
+            <nav class="myClass-nav-Area">
+                <div class="myClass-summary-container">
                     <!-- 안녕하세요 * 님 -->
-                    <div class="hi-User">안녕하세요.<br>
+                    <div class="myClass-hiUser">안녕하세요.<br>
                         <span class="userName">김철수</span> 님!
                     </div>
                     <!-- 나의강의장, 찜목록, 정보수정버튼 -->
-                    <div class="content-container">
-                        <div class="content-1">
-                            <a href="/html/classContents.html" class="class-a">
-                                <span class="class-span">나의 강의장</span>
-                                <i class="fa-solid fa-chevron-right fa-xm"></i>
-                            </a>
+                    <div class="myClass-content-container">
+                        <div class="content-1" onclick="location.href='/html/myClass.html';">
+                            <span class="myClass-span">나의 강의장</span>
+                            <i class="fa-solid fa-chevron-right fa-xm"></i>
                         </div>
-                        <div class="content-1">
-                            <a href="#" class="class-a">
-                                <span class="class-span">나의 찜목록</span>
-                                <i class="fa-solid fa-chevron-right fa-xm"></i>
-                            </a>
+                        <div class="content-1" onclick="location.href='/html/payMall.html';">
+                            <span class="myClass-span">나의 찜목록</span>
+                            <i class="fa-solid fa-chevron-right fa-xm"></i>
                         </div>
-                        <div class="content-1">
-                            <a href="/html/my-info.html" class="class-a">
-                                <span class="class-span">회원정보 수정 </span>
-                                <i class="fa-solid fa-chevron-right fa-xm"></i>
-                            </a>
+                        <div class="content-1" onclick="location.href='/html/my-info.html';">
+                            <span class="myClass-span">회원정보 수정</span>
+                            <i class="fa-solid fa-chevron-right fa-xm"></i>
                         </div>
-                        <!-- 로그아웃 -->
-                        <button class="logout">로그아웃</button>
+
                     </div>
+                    <!-- 로그아웃 -->
+                    <button class="logout-btn">로그아웃</button>
                 </div>
             </nav>
             <!-- ---------------------------------------------- -->
@@ -129,16 +124,19 @@
     <!-- jQuery 라이브러리 추가 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            var include1 = $('[data-include1="header"]');
-            jQuery.each(include1, function () {
-                $(this).load('/html/header.html');
+        <script>
+            $(function () {
+                var include1 = $('[data-include1="header"]');
+                var include2 = $('[data-inclued2="Q&ABtn"]');
+                jQuery.each(include1, function () {
+                    $(this).load('/html/header.html');
+                });
+                jQuery.each(include2, function () {
+                    $(this).load('/html/Q&ABtn.html');
+                });
             });
-           
-        });
-
-    </script>
+    
+        </script>
     <script src="/js/classContents.js"></script>
     <script src="/js/infoChange.js"></script>
 </body>

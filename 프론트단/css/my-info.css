@@ -6,36 +6,41 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
 
-.bodyContainer {
+main{
+    width: 100%;
+}
+.myClass-container {
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 /*body-nav*/
-.bodyContainer>nav {
+.myClass-container nav:nth-child(1) {
     width: 30%;
     height: 970px;
     background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* <nav> 안녕하세요. 김철수님 [전체] */
-.summary-Container {
-    width: 40%;
+.myClass-summary-container {
+    width: 80%;
     height: 780px;
-    margin-left: 90px;
 }
 
 /* 안녕하세요. ~님 글자 영역 */
-.hi-User {
-    width: 300%;
-    padding-top: 100px;
+.myClass-hiUser {
+    width: 100%;
+    padding-top: 70px;
     padding-bottom: 50px;
 
     /*font */
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     color: #333333;
     /*안녕하세요 * 님 폰트 크기, 행간 조절*/
     letter-spacing: -0.5px;
@@ -50,15 +55,13 @@
 }
 
 /* 나의강의장, 찜목록, 정보수정 버튼 */
-.content-contaienr {
-    width: 100px;
-    height: 100px;
-    margin-left: 100px;
+.myClass-content-container {
+    width: 100%;
 }
 
 /* 버튼영역 */
 .content-1 {
-    width: 180%;
+    width: 90%;
     height: 60px;
 
     background-color: #333333;
@@ -69,6 +72,7 @@
     align-items: center;
     padding-left: 16px;
     cursor: pointer;
+
 }
 
 .content-1:hover {
@@ -76,29 +80,31 @@
     font-weight: bolder;
 }
 
-.class-a{
+.content-1 span{
     display: flex;
-    color: white;
     width: 93%;
     justify-content: space-between;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    color: white;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-
+.content-1 i{
+    color: white;
+    margin-right: 20px;
+}
 
 /* 로그아웃버튼 */
-.logout {
+.logout-btn{
     color: #fe6936;
-    font-weight: 800;
     background-color: transparent;
     border: 0 none;
-    margin-top: 20px;
     margin-left: 10px;
-    font-size: 100%;
+    font-size: 17px;
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+    font-weight: 550;
 }
 
 /*------------------body-content------------------*/
@@ -192,7 +198,7 @@
     margin : 14px 0px 0px 0px; 
 }
 .newInfoDup{
-    flex-basis: 70%;
+    flex-basis: 80%;
     border: none;
     display: flex;
     width: 100%;
@@ -206,8 +212,8 @@
     font-size: 15px;
 }
 .input-areaDup > button{
-    flex-basis: 30%;
-    width: 50px;
+    flex-basis: 20%;
+    
     margin: 0;
     background-color: rgb(255, 142, 29);
     border: none;

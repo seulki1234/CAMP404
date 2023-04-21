@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
 * {
@@ -337,14 +337,14 @@ header {
     top: 100px;
     left: 0px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0);
     border-top: 3px solid rgba(255, 255, 255, 0.3);
     width: 100%;
     height: 400px;
     padding-top: 20px;
 }
 
-.subMenuLineUp  li {
+.subMenuLineUp li {
     float: left;
     padding-right: 100px;
 }

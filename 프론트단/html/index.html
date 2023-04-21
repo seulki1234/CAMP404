@@ -30,7 +30,8 @@
         <div class="headerContainer">
             <div class="topAreWrapper">
                 <div class="leftAreaItems">
-                    <div class="logoArea"><a href="/html/index.html"><img src="../로고/CAMP404.png" height="45px" /></a></div>
+                    <div class="logoArea"><a href="/html/index.html"><img src="../로고/CAMP404.png" height="45px" /></a>
+                    </div>
                     <!-- 75 ㅌ 35 -->
                 </div>
 
@@ -149,6 +150,7 @@
     </header>
 
     <main>
+        <div data-inclued2="Q&ABtn" id="Q&ABtn"></div>
         <!-- 상단 슬라이드 이미지 영역 -->
         <div class="setSlideArea">
             <div class="SlideImageContainer">
@@ -260,7 +262,7 @@
                     </div>
                     <div class="aDown2">
                         <div class="aDown3">
-                            <span>2,000</span>
+                            <span class="count_num1">0</span>
                             <span>+</span>
                         </div>
                         <div class="aDown4">
@@ -269,7 +271,8 @@
                                 <div>증가율</div>
                             </div>
                             <div class="aDown6">
-                                <span>120%</span>
+                                <span class="count_num2">0</span>
+                                <span>%</span>
                             </div>
                         </div>
                     </div>
@@ -283,7 +286,7 @@
                     </div>
                     <div class="bDown2">
                         <div class="bDown3">
-                            <span class="bDown4">600</span>
+                            <span class="bDown4 count_num3">0</span>
                             <span class="bDown5">+</span>
                         </div>
                     </div>
@@ -297,7 +300,7 @@
                     </div>
                     <div class="bDown2">
                         <div class="bDown3">
-                            <span class="bDown4">700</span>
+                            <span class="bDown4 count_num4">0</span>
                             <span class="bDown5">+</span>
                         </div>
                     </div>
@@ -385,16 +388,28 @@
             <!-- 중간 광고 -->
             <div class="middleAddArea">
                 <div class="middleAddItems">
-                    <span>최정상 전문가들이</span>
-                    <span>다년간 경험과 지식을 온라인으로</span>
-                    <div class="middleLogoWrapper">
-                        <img src="/로고/CAMP404.png" height="50px" />
-                        <span>Partners</span>
-                    </div>
                     <div class="middleCheckEvent">
-                        <a href="#">EVENT 확인하기&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <div class="Middle_SlideBtn">
+                            <div class="Middle_leftBtn"><span>&lt;</span></div>
+                            <div><span class="Middle_moveNum">1</span></div>
+                            <div><span>&nbsp;/&nbsp;</span></div>
+                            <div><span class="Middle_fixedNum">3</span></div>
+                            <div class="Middle_rightBtn"><span>&gt;</span></div>
+                        </div>
                     </div>
                 </div>
+                <ul class="midde_SlideImgHolder">
+                    <li class="midde_SlideContainer">
+                        <img class="midde_InnerImg" src="/img/middleSlide1.png" />
+                    </li>
+                    <li class="midde_SlideContainer">
+                        <img class="midde_InnerImg" src="/img/middleSlide2.png" />
+                    </li>
+                    <li class="midde_SlideContainer">
+                        <img class="midde_InnerImg" src="/img/middleSlide3.png" />
+                    </li>
+                </ul>
+
             </div>
             <!-- 중간 광고 -->
 
@@ -550,6 +565,34 @@
                 </div>
             </div>
             <!-- BACK-END class -->
+
+            <!-- 중간 광고2 -->
+            <div class="middleAddArea2">
+                <div class="middleAddItems2">
+                    <div class="middleCheckEvent2">
+                        <div class="Middle_SlideBtn2">
+                            <div class="Middle_leftBtn2"><span>&lt;</span></div>
+                            <div><span class="Middle_moveNum2">1</span></div>
+                            <div><span>&nbsp;/&nbsp;</span></div>
+                            <div><span class="Middle_fixedNum2">3</span></div>
+                            <div class="Middle_rightBtn2"><span>&gt;</span></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="midde_SlideImgHolder2">
+                    <li class="midde_SlideContainer2">
+                        <img class="midde_InnerImg2" src="/img/middleSlide1.png" />
+                    </li>
+                    <li class="midde_SlideContainer2">
+                        <img class="midde_InnerImg2" src="/img/middleSlide2.png" />
+                    </li>
+                    <li class="midde_SlideContainer2">
+                        <img class="midde_InnerImg2" src="/img/middleSlide3.png" />
+                    </li>
+                </ul>
+
+            </div>
+            <!-- 중간 광고2 -->
 
             <!-- DATABASE class -->
             <div class="classWrapper">
@@ -745,7 +788,7 @@
                 <!--footer 윗부분 왼쪽에서2-->
                 <ul class="footer_menu_1">
                     <p>COMPANY</p>
-                    <li><a href="#">공지사항</a></li>
+                    <li><a href="/html/notice.html">공지사항</a></li>
                     <li><a href="#">채용안내</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
@@ -789,13 +832,24 @@
 
                 <!--footer 아랫부분 오른쪽-->
                 <div class="footer_content_down_right">
-                    <p>(주) 데이원컴퍼니대표이사 이강민서울시 강남구 테헤란로 231, 6층 7층</p>
-                    <p>(센터필드 웨스트)02-501-6222help@coloso.co.kr개인정보책임관리자: 이강민사업자번호: 810-86-00658통신판매업 신고번호: 제
-                        2017-서울강남-01977호원격평생교육원: 제 572호</p>
+                    <p>(주)CAMP404 공동대표 김민수, 이슬기, 이유정, 임형주, 정서윤 서울특별시 종로구 청와대로 1</p>
+                    <p>02-1111-2222 camp404@camp.co.kr 개인정보책임관리자: 이슬기 사업자번호: 810-11-11658 통신판매업 신고번호: 제
+                        2023-서울종로구-청와대: 제 1호</p>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        $(function () {
+
+            var include2 = $('[data-inclued2="Q&ABtn"]');
+
+            jQuery.each(include2, function () {
+                $(this).load('/html/Q&ABtn.html');
+            });
+        });
+
+    </script>
 
     <script src="/js/header.js"></script>
     <!-- <script src="${contextPath}/resources/js/learningPage.js"></script> -->
