@@ -1,6 +1,7 @@
+/* 폰트 설정 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-
+/* 전역설정 오직 박스 사이징만 */
 * {
     box-sizing: border-box;
 }
@@ -12,8 +13,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* 실제 내용이 들어갈 영역 지정 */
@@ -47,6 +46,7 @@ main {
 }
 
 
+/* 상단 슬라이드 컨테이너 */
 .SlideImageContainer {
     position: relative;
     width: 1100px;
@@ -66,23 +66,27 @@ main {
     left: 60px;
 }
 
+/* 상단 슬라이드 왼쪽 클릭 버튼 */
 .leftBtn {
     cursor: pointer;
 }
 
+/* 상단 슬라이드 오른쪽 클릭 버튼 */
 .rightBtn {
     cursor: pointer;
 }
 
-
+/* 필요없거 같은데..?? */
 .slideBtn>div {
     left: -360px;
 }
 
+/* 상단 슬라이드 이동하는 숫자 */
 .moveNum {
     padding: 10px;
 }
 
+/* 상단 슬라이드 고정 숫자 */
 .fixedNum {
     padding: 10px;
 }
@@ -96,7 +100,7 @@ main {
     transform: translateX(0px);
 }
 
-
+/* 상단 슬라이드 속 각각의 슬라이드 */
 .slideContainer {
     position: relative;
     flex: 1;
@@ -490,7 +494,7 @@ main {
 }
 
 .mainText {
-    flex: 7;
+    flex: 9;
     font-size: 12px;
     padding-top: 5px;
 }
@@ -513,15 +517,30 @@ main {
 }
 
 .likeBtn {
-    flex: 3;
     text-align: right;
     color: white;
     font-weight: bold;
     text-decoration: none;
+
+}
+
+@keyframes animateHeart {
+    0% {
+        transform: scale(.2);
+    }
+
+    40% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .likeBtn>i {
     cursor: pointer;
+    transform-origin: center;
 }
 
 .likeBtn>i:active {
@@ -530,6 +549,7 @@ main {
 
 .likeColor {
     color: red;
+    animation: animateHeart .3s linear forwards;
 }
 
 .subText {
@@ -616,7 +636,7 @@ main {
     margin-right: 50px;
     position: absolute;
     margin: 0 auto;
-    z-index: 1;
+    /* z-index: 1; */
     width: auto;
     display: flex;
     color: white;
@@ -744,10 +764,8 @@ main {
 /* 중간 광고 슬라이드 영역 */
 
 .Middle_SlideBtn2 {
-    margin-right: 50px;
     position: absolute;
     margin: 0 auto;
-    z-index: 1;
     width: auto;
     display: flex;
     color: white;

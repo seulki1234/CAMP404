@@ -66,8 +66,7 @@ a{
     padding : 10px;
 }
 
-.classroom_tabs li a:hover,
-.classroom_tabs li a:focus{
+.classroom_tabs li a:hover{
     color: rgb(255, 142, 29);
 }
 
@@ -433,11 +432,12 @@ hr {
     position: relative;
     display: flex;
     flex-direction: row;
-    height : 20px;
+    height : 25px;
 }
 
 .enterDate {
     position : absolute;
+    top : 5px;
     left : 10px;
     font-size: 12px; 
     color: white;     
@@ -447,6 +447,7 @@ hr {
 
 .change{
     position : absolute;
+    top : 5px;
     right : 30px;
     font-size: 12px; 
     padding-right: 10px;
@@ -457,6 +458,7 @@ hr {
 
 .remove{
     position : absolute;
+    top : 5px;
     right : 5px;
     font-size: 12px;
     padding-right: 5px; 

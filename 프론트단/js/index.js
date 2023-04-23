@@ -7,6 +7,7 @@ const slideImgHolder = $('.slideImgHolder');
 const setSlideArea = $('.setSlideArea');
 const colorArr = ['#1e1e1e', '#f27f88', '#b843ff', '#8e8fc3'];
 const likeBtn = $('.topText> .likeBtn');
+const heart = $('.heart');
 
 let num = 1100;
 let screenMove = -1100;
@@ -373,28 +374,5 @@ function numberWithCommas(x) { // 3자리마자 콤마를 찍어주기 위한 �
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-const btntest = document.querySelector('.btntest');
-
-btntest.addEventListener('mouseover', function (e) {
-    if (e.type === 'mouseover') {
-        btntest.style.color = 'yellow';
-    } else if (e.type === 'mouseleave') {
-        btntest.style.color = 'green';
-    }
-})
 
 
-
-
-function changeColor(e) {
-    if (e.type === 'mouseover') {
-        btntest.style.color = 'yellow';
-    } else if (e.type === 'mouseleave') {
-        btntest.style.color = 'green';
-    }
-}
-
-btntest.addEventListener('mouseover', changeColor);
-btntest.addEventListener('mouseleave', changeColor);
-
-// 트랜지션때 for문으로 작업함.
