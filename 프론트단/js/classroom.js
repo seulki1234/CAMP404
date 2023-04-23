@@ -142,45 +142,25 @@ $('.noteWrite').hide();  /*글작성버튼 hide */
                  //slideArea(수정할수 잇는 노트부분을 감싸는 영역)
     addWrapper.innerHTML = `
    
-    <div class = "addArea">
-    <span class="text1"></span>          
-    <span class="change">수정</span>
-    <span class="remove">삭제</span>
-    <span class="down"><i class="fa-solid fa-angle-down"></i></span>  
+<div class = "addArea">
+    <div class="text1"></div>          
+    <div class="down"><i class="fa-solid fa-angle-down"></i></div>  
+    <div class="up"><i class="fa-solid fa-angle-up"></i></div>
 </div>
 
 <div class="slideWrapper">
 
     <div class="slideArea">
         <textarea class="text2"></textarea>
-        <div>
-            <p>
-               <span class="enterDate">23.04.21</span>
-            </p>
-
-            <div>
-              <span class="change">수정</span>
-              <span class="remove">삭제</span>
-            </div>
-        
-        </div>
-        
-        
-   
-          
+        <div class="slideAreaDown">
+            <div class="enterDate">23.04.21</div>           
+            <div class="change">수정</div>
+            <div class="remove">삭제</div>            
+        </div>          
     </div>
-
 </div>
       
     `;
-
-    // <p>
-    // <span class="enterDate"></span>
-    // </p>
-
-    // <div class="counterWrapper">
-    //               <span class="counter">${typeData.value.length}</span> / 2000
-    //           </div>
 
 
 
@@ -202,14 +182,21 @@ remove.classList.add('remove')
 //슬라이드 기능-slideToggle 함수로 slide up/down 
   const slideArea = addWrapper.querySelector('.slideArea');
   const down = addWrapper.querySelector('.down');
+  const up = addWrapper.querySelector('.up');
   down.addEventListener('click', () => {
     $(slideArea).slideToggle();
+    $(down).hide();
+    $(up).show();
 });
 
 
-  // input.addEventListener('click', () => {
-  //     $(slideArea).slideToggle();
-  // });
+
+  up.addEventListener('click', () => {
+    $(slideArea).slideToggle();
+    $(down).show();
+    $(up).hide();
+});
+
 
 //열려진 슬라이드 내부 수정기능
 const innerInput = addWrapper.querySelector('.text2'); //슬라이브 내부 수정공간
@@ -222,7 +209,8 @@ const change = addWrapper.querySelector('.change');
           enterDate.innerText = (moment().format("YYYY.MM.DD HH:mm:ss"));
           alert('변경사항이 저장되었습니다!');
           $(slideArea).slideToggle();
-    
+          $(down).show();
+          $(up).hide();
         });
 
 
@@ -234,28 +222,15 @@ enterDate.innerText = (moment().format("YYYY.MM.DD HH:mm:ss") );
 
 //삭제기능
 remove.addEventListener('click',()=>{
-      addWrapper.remove(); 
+      // addWrapper.remove(); 
+      // alert("노트가 삭제되었습니다!");
+      if (confirm("정말 삭제하시겠습니까?") == true){ 
+        addWrapper.remove();   
+    }else{    
+        return false;
+    }
 })
-
-//내부 숫자 카운트 //왜 작동 안하지?ㅠㅠ
-// innerInput.addEventListener('input', function(){
-//   if($(this).val().length <= 1000) {
-//       $('.counter').css("color","white");
-//     } else if($(this).val().length <= 1800){
-//       $('.counter').css("color", "orange");
-//     } else{
-//       $('.counter').css("color", "red");
-//       const str = $(this).val();
-//       $(this).val(str.substr(0,2000));
-//     }
-//     $('.counter').text($(this).val().length);
-//   });
   };
-
-
-
-
-
 
 /////////////////////////////////////////////////
 
