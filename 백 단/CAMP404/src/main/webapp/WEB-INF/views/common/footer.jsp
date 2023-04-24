@@ -1,5 +1,5 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@
                 <!--footer 윗부분 왼쪽에서 1번째-->
                 <div class="footer_logo">
                     <!--로고 들어갈 자리-->
-                    <img src="../로고/CAMP404.png">
+                    <img src="resources/images/CAMP404.png">
 
                     <p>최고에게 배우는 최상의 가치</p>
 
@@ -66,7 +66,7 @@
                 <!--footer 윗부분 왼쪽에서2-->
                 <ul class="footer_menu_1">
                     <p>COMPANY</p>
-                    <li><a href="/html/notice.html">공지사항</a></li>
+                    <li><a href="/views/notice/notice.jsp">공지사항</a></li>
                     <li><a href="#">채용안내</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>

@@ -1,5 +1,5 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -32,7 +32,7 @@
         <div class="headerContainer">
             <div class="topAreWrapper">
                 <div class="leftAreaItems">
-                    <div class="logoArea"><a href="${contextPath}"><img src="${contextPath}/resources/images/CAMP404.png" height="45px" /></a>
+                    <div class="logoArea"><a href="${contextPath}"><img src="resources/images/CAMP404.png" height="45px" /></a>
                     </div>
                     <!-- 75 ㅌ 35 -->
                 </div>
