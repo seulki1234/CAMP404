@@ -29,18 +29,19 @@ body {
 .c_topImage {
     width: 1100px;
     height: 500px;
-    border: 1px solid white;
+    margin-bottom: 150px;
 }
 
 /* 상단 강의관련 정보 */
 .c_topItems {
+    position: absolute;
+    top: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 720px;
     height: 250px;
     flex-direction: column;
-    border: 1px solid white;
 }
 
 /* 강의 카테고리 */
@@ -59,7 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 36px;
-    margin: 20px 0 10px 0;
+    margin: 10px 0 20px 0;
 }
 
 /* 강사이름 */
@@ -72,13 +73,12 @@ body {
     margin-bottom: 20px;
 }
 
-/* 아이콘 3개 */
+/* 아이콘 3개  */
 .c_topIcons {
     flex: 4;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid white;
 }
 
 /* 아이콘 간격 */
@@ -133,7 +133,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid white;
     width: 100%;
     height: 100px;
 }
@@ -175,8 +174,13 @@ body {
 }
 
 /* 구매버튼 */
+
+.c_topBuyContainer {
+    display: flex;
+}
+
 .c_topBuybtn {
-    flex: 5;
+    flex: 7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,6 +188,50 @@ body {
     height: 45px;
     background-color: #4200ff;
     border-radius: 8px;
+    margin: 0 10px;
+}
+
+.c_topBuybtn1 {
+    flex: 2;
+}
+
+.c_topBuybtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+.likeBtn {
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+@keyframes animateHeart {
+    0% {
+        transform: scale(.2);
+    }
+
+    40% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.likeBtn>i {
+    cursor: pointer;
+    transform-origin: center;
+}
+
+.likeColor {
+    color: red;
+    animation: animateHeart .3s linear forwards;
 }
 
 /* 구매버튼 내용 */
@@ -198,7 +246,7 @@ body {
     justify-content: center;
     margin: auto;
     height: 300px;
-    border: 1px solid white;
+    margin-bottom: 40px;
 }
 
 /* 강의 상세정보 왼쪽 */
@@ -207,7 +255,6 @@ body {
     flex-direction: column;
     width: 490px;
     height: 170px;
-    border: 1px solid white;
 }
 
 /* 왼쪽 상세정보 타이틀 / 클래스 상세 정보*/
@@ -215,7 +262,6 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
-    border: 1px solid white;
     font-size: 20px;
 }
 
@@ -250,7 +296,6 @@ body {
     flex: 1;
     display: flex;
     align-items: center;
-    border: 1px solid white;
 }
 
 /* 해시태그 커버 */
@@ -273,7 +318,6 @@ body {
     justify-content: center;
     width: 490px;
     height: 170px;
-    border: 1px solid white;
     padding-left: 30px;
 }
 
@@ -350,7 +394,7 @@ body {
 }
 
 .c_rightMiddle_Under_Container {
-    z-index: 10;
+    z-index: 110;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -471,7 +515,7 @@ body {
 }
 
 .c_rightBottom_Under_Container {
-    z-index: 10;
+    z-index: 110;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -487,4 +531,147 @@ body {
 
 .couponHidden {
     display: none;
+}
+
+.c_classLine {
+    z-index: 90;
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    height: 50px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+
+}
+
+.c_classLineTitle {
+    display: flex;
+    width: 1100px;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.c_innerText1 {
+    cursor: pointer;
+}
+
+.c_innerText2 {
+    cursor: pointer;
+}
+
+.c_innerText3 {
+    cursor: pointer;
+}
+
+.c_innerText4 {
+    cursor: pointer;
+}
+
+.c_innerText5 {
+    cursor: pointer;
+}
+
+.c_classContent1 {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.c_classContent2 {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.c_classLineInner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1100px;
+    height: auto;
+    border: 1px solid rgb(255, 0, 0);
+    margin-bottom: 50px;
+
+}
+
+.c_classLineInner>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.c_separator {
+    width: 980px;
+    border-bottom: 0.1px solid red;
+    margin: 50px 0;
+}
+
+.확인용 {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    width: 820px;
+    margin-bottom: 20px;
+}
+
+.확인용1 {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.확인용2 {
+    display: flex;
+}
+
+.확인용3 {
+    border: 1px solid red;
+    width: 160px;
+    height: 160px;
+}
+
+.확인용4 {
+    border: 1px solid red;
+    width: 230px;
+    height: 260px;
+}
+
+.확인용5 {
+    border: 1px solid red;
+    width: 480px;
+    height: 260px;
+}
+
+.확인용6 {
+    width: 230px;
+    border-bottom: 0.1px solid #c8c8d2;
+}
+
+.확인용7 {
+    width: 480px;
+    border-bottom: 0.1px solid #c8c8d2;
+}
+
+.확인용8 {
+    display: flex;
+    flex-direction: row !important;
+    width: 100%;
+}
+
+.확인용9 {
+    display: flex;
+    flex-direction: row !important;
 }
