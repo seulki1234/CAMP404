@@ -1,5 +1,5 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
 <!DOCTYPE html>
@@ -54,7 +54,7 @@
                             <span class="slideTitle1-2">환영합니다!</span>
                             <span class="slideTitle1-3">CAMP 404</span>
                         </div>
-                        <img class="innerImg" src="/img/slide1.png" />
+                        <img class="innerImg" src="resources/images/slide1.png" />
                     </li>
                     <li class="slideContainer">
                         <div class="slideTitle">
@@ -62,7 +62,7 @@
                             <span class="slideTitle2-2">2번으로 넘어가라</span>
                             <span class="slideTitle2-3">30만원 웰컴쿠폰 팩 증정!</span>
                         </div>
-                        <img class="innerImg" src="/img/slide2.png" />
+                        <img class="innerImg" src="resources/images/slide2.png" />
                     </li>
                     <li class="slideContainer">
                         <div class="slideTitle">
@@ -70,7 +70,7 @@
                             <span class="slideTitle3-2">할인에는 끝이 없으니까!</span>
                             <span class="slideTitle3-3">웰컴쿠폰 무제한 증정!</span>
                         </div>
-                        <img class="innerImg" src="/img/slide3.png" />
+                        <img class="innerImg" src="resources/images/slide3.png" />
                     </li>
                     <li class="slideContainer">
                         <div class="slideTitle">
@@ -78,7 +78,7 @@
                             <span class="slideTitle4-2">함께하실 강사님 및 연사님을 모집합니다!</span>
                             <span class="slideTitle4-3">30만원 웰컴쿠폰 팩 증정!</span>
                         </div>
-                        <img class="innerImg" src="/img/slide4.png" />
+                        <img class="innerImg" src="resources/images/slide4.png" />
                     </li>
                 </ul>
             </div>
@@ -208,7 +208,7 @@
                     <!-- BEST CLASS 과목 1 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/DBimg.png">
+                            <img src="resources/images/DBimg.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -229,7 +229,7 @@
                     <!-- BEST CLASS 과목 2 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/backendImg.png">
+                            <img src="resources/images/backendImg.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -250,7 +250,7 @@
                     <!-- BEST CLASS 과목 3 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/6.png">
+                            <img src="resources/images/6.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -286,13 +286,13 @@
                 </div>
                 <ul class="midde_SlideImgHolder">
                     <li class="midde_SlideContainer">
-                        <img class="midde_InnerImg" src="/img/middleSlide1.png" />
+                        <img class="midde_InnerImg" src="resources/images/middleSlide1.png" />
                     </li>
                     <li class="midde_SlideContainer">
-                        <img class="midde_InnerImg" src="/img/middleSlide2.png" />
+                        <img class="midde_InnerImg" src="resources/images/middleSlide2.png" />
                     </li>
                     <li class="midde_SlideContainer">
-                        <img class="midde_InnerImg" src="/img/middleSlide3.png" />
+                        <img class="midde_InnerImg" src="resources/images/middleSlide3.png" />
                     </li>
                 </ul>
 
@@ -333,7 +333,7 @@
                     <!-- FRONT-END 과목 2 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img2.png">
+                            <img src="resources/images/img2.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -354,7 +354,7 @@
                     <!-- FRONT-END 과목 3 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img3.png">
+                            <img src="resources/images/img3.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -389,7 +389,7 @@
                     <!-- BACK-END 과목 1 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img1.png">
+                            <img src="resources/images/img1.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -410,7 +410,7 @@
                     <!-- BACK-END 과목 2 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img2.png">
+                            <img src="resources/images/img2.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -431,7 +431,7 @@
                     <!-- BACK-END 과목 3 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img3.png">
+                            <img src="resources/images/img3.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -467,13 +467,13 @@
                 </div>
                 <ul class="midde_SlideImgHolder2">
                     <li class="midde_SlideContainer2">
-                        <img class="midde_InnerImg2" src="/img/middleSlide1.png" />
+                        <img class="midde_InnerImg2" src="resources/images/middleSlide1.png" />
                     </li>
                     <li class="midde_SlideContainer2">
-                        <img class="midde_InnerImg2" src="/img/middleSlide2.png" />
+                        <img class="midde_InnerImg2" src="resources/images/middleSlide2.png" />
                     </li>
                     <li class="midde_SlideContainer2">
-                        <img class="midde_InnerImg2" src="/img/middleSlide3.png" />
+                        <img class="midde_InnerImg2" src="resources/images/middleSlide3.png" />
                     </li>
                 </ul>
 
@@ -493,7 +493,7 @@
                     <!-- DATABASE 과목 1 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img1.png">
+                            <img src="resources/images/img1.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -514,7 +514,7 @@
                     <!-- DATABASE 과목 2 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img2.png">
+                            <img src="resources/images/img2.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -535,7 +535,7 @@
                     <!-- DATABASE 과목 3 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img3.png">
+                            <img src="resources/images/img3.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -569,7 +569,7 @@
                     <!-- OS class 과목 1 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img1.png">
+                            <img src="resources/images/img1.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -590,7 +590,7 @@
                     <!-- OS class 과목 2 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img2.png">
+                            <img src="resources/images/img2.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -611,7 +611,7 @@
                     <!-- OS class 과목 3 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img3.png">
+                            <img src="resources/images/img3.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -636,111 +636,14 @@
     </main>
 
     <footer>
-        <!--footer 전체 감싸는 영역-->
-        <div class="footer_main">
-
-            <!--footer 윗부분-->
-            <div class="footer_content_up">
-
-                <!--footer 윗부분 왼쪽에서 1번째-->
-                <div class="footer_logo">
-                    <!--로고 들어갈 자리-->
-                    <img src="../로고/CAMP404.png">
-
-                    <p>최고에게 배우는 최상의 가치</p>
-
-                    <!--글로벌버튼-->
-                    <div class="button">
-                        <a href="#" class="button_a">
-                            <i class="fa-sharp fa-solid fa-globe"></i>
-                            <p>Camp404 KR</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                    </div>
-
-                    <!--mouserover 시 열리는 부분-->
-                    <ul class="menu">
-                        <li><a href="#" class="menu_items">Camp404 KR</a></li>
-                        <hr>
-                        <li><a href="#" class="menu_items">Camp404 JP</a></li>
-                        <hr>
-                        <li><a href="#" class="menu_items">Camp404 US</a></li>
-
-                    </ul>
-                </div>
-
-
-
-                <!--footer 윗부분 왼쪽에서2-->
-                <ul class="footer_menu_1">
-                    <p>COMPANY</p>
-                    <li><a href="/html/notice.html">공지사항</a></li>
-                    <li><a href="#">채용안내</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-
-                <!--footer 윗부분 왼쪽에서3-->
-                <ul class="footer_menu_2">
-                    <p>SERVICE</p>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">환불규정</a></li>
-                </ul>
-
-                <!--footer 윗부분 왼쪽에서 4-->
-                <div class="footer_customer">
-                    <p>고객센터</p>
-                    <a href="#">
-                        <div class="footer_customer_box">
-                            문의하기
-                        </div>
-                    </a>
-                    <p>*주중 10~18시/주말 및 공휴일 제외</p>
-                </div>
-            </div>
-
-
-
-
-            <!--footer 아랫부분-->
-            <div class="footer_content_down">
-
-                <!--footer 아랫부분 왼쪽-->
-                <div class="footer_content_down_left">
-                    <div>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-sharp fa-solid fa-blog"></i></a>
-                    </div>
-                </div>
-
-                <!--footer 아랫부분 오른쪽-->
-                <div class="footer_content_down_right">
-                    <p>(주)CAMP404 공동대표 김민수, 이슬기, 이유정, 임형주, 정서윤 서울특별시 종로구 청와대로 1</p>
-                    <p>02-1111-2222 camp404@camp.co.kr 개인정보책임관리자: 이슬기 사업자번호: 810-11-11658 통신판매업 신고번호: 제
-                        2023-서울종로구-청와대: 제 1호</p>
-                </div>
-            </div>
-        </div>
+            <jsp:include page="/WEB-INF/views/common/footer.jsp"/>
     </footer>
-    <script>
-        $(function () {
+    
 
-            var include2 = $('[data-inclued2="Q&ABtn"]');
-
-            jQuery.each(include2, function () {
-                $(this).load('/html/Q&ABtn.html');
-            });
-        });
-
-    </script>
-
-    <script src="/js/header.js"></script>
+    <script src="resources/js/header.js"></script>
     <!-- <script src="${contextPath}/resources/js/learningPage.js"></script> -->
-    <script src="/js/index.js"></script>
-    <script src="/js/footer.js"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/footer.js"></script>
 </body>
 
 </html>
