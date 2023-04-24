@@ -7,6 +7,7 @@ const searchSubMenu = $('.searchSubMenu');
 const body = $('body');
 const searchItems = $('.searchItems');
 const bgColor = $('.bgColor');
+const header = $('header');
 
 
 // 검색창 클릭 시 가운데 이동 및 사이즈 변경
@@ -14,9 +15,7 @@ searchBar.on('click', function () {
     if (searchBarWrapper.hasClass('searchBarMiddle') === false) {
         subMenu.slideUp('fast');
         bgColor.removeClass('bgColorHidden');
-
         searchBarWrapper.addClass('searchBarMiddle');
-        // bgColor.addClass('bgColorHidden');
     } else {
         return false;
     }
@@ -55,20 +54,19 @@ closeSearch.on('click', function () {
         loginArea.removeClass('loginAreaHide');
         closeSearch.addClass('closeSearchHide');
         searchSubMenu.addClass('searchSubMenu_Hide');
-
         searchBarWrapper.removeClass('searchBarMiddle');
         bgColor.addClass('bgColorHidden');
     } else {
         return false;
     }
 });
+
 searchBar.on('focusout', function () {
     if (searchBarWrapper.hasClass('searchBarMiddle') === true) {
         console.log('검색창 닫기 버튼 누름');
         loginArea.removeClass('loginAreaHide');
         closeSearch.addClass('closeSearchHide');
         searchSubMenu.addClass('searchSubMenu_Hide');
-
         searchBarWrapper.removeClass('searchBarMiddle');
         bgColor.addClass('bgColorHidden');
     } else {
@@ -110,6 +108,7 @@ catLeftWrapper.on('mouseleave', function () {
 catLeftWrapper.on('click', function () {
     subMenu.slideUp('fast');
 });
+
 
 
 

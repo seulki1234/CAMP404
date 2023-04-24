@@ -543,10 +543,6 @@ main {
     transform-origin: center;
 }
 
-.likeBtn>i:active {
-    outline: white;
-}
-
 .likeColor {
     color: red;
     animation: animateHeart .3s linear forwards;
