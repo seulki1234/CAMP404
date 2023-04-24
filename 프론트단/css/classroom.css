@@ -66,8 +66,7 @@ a{
     padding : 10px;
 }
 
-.classroom_tabs li a:hover,
-.classroom_tabs li a:focus{
+.classroom_tabs li a:hover{
     color: rgb(255, 142, 29);
 }
 
@@ -361,24 +360,6 @@ hr {
 }
 
 
-.slideWrapper {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin : 10px;
-   border : solid 1px yellow;
-}
-
-.slideArea {
-    display: none;
-    border-left : 10px;
-    width : 100%;
-    border : solid 1px red;
-}
-
-
-
 /*text1:작성한 노트가 출력되는 공간*/
 .text1 {
     flex: 1;
@@ -390,9 +371,44 @@ hr {
     color : white;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    
-    cursor: pointer;
+
 }
+
+.down  {
+    /* display: flex; */
+    padding : 5px;
+    margin-right : 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.up{
+    display: none;
+    padding : 5px;
+    margin-right : 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.slideWrapper {
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    margin : 10px;
+    background-color: rgb(75, 74, 74);
+    border-radius: 5px;
+   /* border : solid 1px yellow; */
+}
+
+.slideArea {
+    display: none;
+    border-left : 10px;
+    width : 100%;
+    /* border : solid 2px red; */
+    /* position: relative; */
+}
+
 
 /*text2: 수정된 노트가 출력되는 공간*/
 .text2 {
@@ -409,32 +425,53 @@ hr {
     color : white;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
+.slideAreaDown{
+   
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height : 25px;
+}
 
 .enterDate {
-    position: absolute;
-
-    margin : 10px;
-    /* padding : 10px; */
-    bottom: 5px;
-    left: 10px;
-    font-size: 12px;
-    color: white;
+    position : absolute;
+    top : 5px;
+    left : 10px;
+    font-size: 12px; 
+    color: white;     
+    
 }
 
 
-
-
-.remove , .change, .down  {
-    display: flex;
-    padding : 5px;
-    margin-right : 10px;
-    cursor: pointer;
-    font-size: 12px;
+.change{
+    position : absolute;
+    top : 5px;
+    right : 30px;
+    font-size: 12px; 
+    padding-right: 10px;
+    color: white; 
+    cursor : pointer;
+   
 }
 
+.remove{
+    position : absolute;
+    top : 5px;
+    right : 5px;
+    font-size: 12px;
+    padding-right: 5px; 
+    color: white; 
+    cursor : pointer;   
+}
+
+.change:hover,
+.remove:hover,
+.down:hover,
+.up:hover{
+    color: rgb(255, 142, 29);
+}
 
 
 

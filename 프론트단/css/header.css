@@ -42,7 +42,7 @@ body {
 
 /* 헤더 태그, 크기 조절용 */
 header {
-    z-index: 10;
+    z-index: 100;
     position: sticky;
     top: 0px;
     left: 0px;
