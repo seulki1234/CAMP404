@@ -66,7 +66,7 @@
                 <!--footer 윗부분 왼쪽에서2-->
                 <ul class="footer_menu_1">
                     <p>COMPANY</p>
-                    <li><a href="/views/notice/notice.jsp">공지사항</a></li>
+                    <li><a href="${contextPath}/notice/notice.jsp">공지사항</a></li>
                     <li><a href="#">채용안내</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
