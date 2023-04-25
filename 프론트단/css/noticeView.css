@@ -179,11 +179,106 @@ textarea{
 }
 
 
+/* 댓글 개수*/
+.count-reply{
+    background-color: tomato;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+}
+
+.count-reply-info{
+    background-color: aquamarine;
+    padding-bottom: 25px;
+}
+
+/* 댓글 */
+.reply-area{
+    background-color: cornflowerblue;
+    padding: 20px 20px 20px 20px;
+}
+
+.reply-area-frm{
+    background-color: thistle;
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.profile-img-area{
+    background-color: rgb(170, 145, 114);
+    width: min-content;
+    padding-right: 7px;
+    padding-top: 8px;
+}
+
+.member-profile-img{
+    background-color: aqua;
+    width: 30px;
+    border-radius: 50px;
+}
+
+.comment-frm-area{
+    background-color: violet;
+}
+
+.comment-frm-form{
+    background-color: teal;
+    display: flex;
+}
+
+.comment-frm-form > textarea{
+    width: 900px;
+    height: 90px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.commentBtn-area{
+    background-color: tomato;
+    padding-left: 7px;
+}
+
+.commentBtn{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 142, 29);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
 
 
+/* 작성된 댓글 */
+.member-comment-area{
+    background-color: rgb(39, 133, 136);
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.member-comment-area-ul{
+    background-color: yellow;
+    padding-top: 30px;
+}
 
+.member-comment-area-li{
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+}
 
+.member-info{
+    display: flex;
+    background-color: burlywood;
+}
+
+.member-comment-img > a > img{
+    height: 35px;
+    width: min-content;
+    background-color: aqua;
+    border-radius: 50px;
+}
 
 
 

@@ -131,6 +131,8 @@
                 </div>
             </article>
 
+
+            <!-- 댓글 -->
             <div class="count-reply">
                 <h2 class="count-reply-info">2개의 댓글</h2>
             </div>
@@ -141,7 +143,7 @@
                         <img class="member-profile-img" src="/img/smile_emoji.png" alt="">
                     </div>
                     <div class="comment-frm-area">
-                        <form action="">
+                        <form action="" class="comment-frm-form">
                             <textarea name="" id="comment_frm" 
                             placeholder="댓글을 작성해보세요."></textarea>
                             <div class="commentBtn-area">
@@ -174,8 +176,8 @@
                             </div>
     
                             <div class="comment-editBar-detail">
-                                <button class="editBtn"> 수정하기</button>
-                                <button class="removeBtn"> 삭제하기</button>
+                                <button class="CeditBtn"> 수정하기</button>
+                                <button class="CremoveBtn"> 삭제하기</button>
                             </div>
                         </div>
 
@@ -186,7 +188,53 @@
                         </div>
 
                         <div class="rereply-area">
+                            <div>
+                                <button class="hide-all-reply">댓글 모두 숨기기</button>
+                            </div>
                             <button class="rereplyBtn">댓글 쓰기</button>
+                        </div>
+
+                        <!-- 답글 -->
+                        <div>
+                            <section>
+                                <ul>
+                                    <li>
+                                        <div class="member-info">
+                                            <div class="member-comment-img">
+                                                <a href="">
+                                                    <img src="/img/finger_emoji.png" alt="">
+                                                </a>
+                                            </div>
+                
+                                            <div class="member-info-detail">
+                                                <a href="" class="">나비나비</a>
+                                                <div class="member-comment-date">
+                                                    <a href="" class="comment-date">1개월 전</a>
+                                                </div>
+                                            </div>
+                
+                                            <div class="comment-editBar">
+                                                <i class="fa-solid fa-ellipsis">
+                                            </div>
+                    
+                                            <div class="comment-editBar-detail">
+                                                <button class="CeditBtn"> 수정하기</button>
+                                                <button class="CremoveBtn"> 삭제하기</button>
+                                            </div>
+                                        </div>
+                
+                                        <div class="commented-area">
+                                            <div class="commented-area-content">
+                                                <div>내용내용용용용</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="rereply-area">
+                                            <button class="rereplyBtn">댓글 쓰기</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
                         </div>
 
                     </li>
