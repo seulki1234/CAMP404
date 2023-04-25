@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/footer.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/reset.css" />
 
     <script src="https://kit.fontawesome.com/606ab3dc62.js" crossorigin="anonymous"></script>
 
@@ -37,7 +37,7 @@
                 <!--footer 윗부분 왼쪽에서 1번째-->
                 <div class="footer_logo">
                     <!--로고 들어갈 자리-->
-                    <img src="resources/images/CAMP404.png">
+                    <img src="${pageContext.request.contextPath}/resources/images/CAMP404.png">
 
                     <p>최고에게 배우는 최상의 가치</p>
 
@@ -122,7 +122,7 @@
 
 
 
-    <script src="/js/footer.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/footer.js"></script>
 </body>
 
 </html>
