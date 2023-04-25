@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="/css/login.css"> -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/frontClass.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/reset.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/frontClass.css" />
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -20,142 +20,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/font.css" />
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
+
     <title>정말 쉬운 자바_진짜최종_ㅁㄴㅇㄹ.java</title>
 </head>
 
 <body>
     <!-- 헤더 영역 -->
     <header>
-        <div class="headerContainer">
-            <div class="topAreWrapper">
-                <div class="leftAreaItems">
-                    <div class="logoArea"><a href="/html/index.html"><img src="../로고/CAMP404.png" height="45px" /></a>
-                    </div>
-                    <!-- 75 ㅌ 35 -->
-                </div>
-
-                <div class="searchBarContainer">
-                    <div class="searchBarWrapper">
-                        <i class="fa-solid fa-magnifying-glass"></i><input class="searchBar"
-                            placeholder="어떤 강의를 찾으시나요?" />
-                        <div class="xbtnLocation">
-                            <button class="searchXBtn btnHide">x</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- 290 ㅌ 35 -->
-                <div class="rightWrapper">
-                    <div class="rightAreaItem">
-                        <a class="loginArea" href="/html/login.html">로그인</a>
-                        <span class="closeSearch closeSearchHide">x</span>
-                    </div>
-                </div>
-            </div>
-            <div class="searchSubMenu searchSubMenu_Hide">
-                <div class="searchSubMenuContainer">추천 검색어
-                    <div class="searchSubMenuWrapper">
-                        <span class="searchItems"><a href="#">자바스크립트</a></span>
-                        <span class="searchItems"><a href="#">파이썬</a></span>
-                        <span class="searchItems"><a href="#">SQL</a></span>
-                    </div>
-                    <div class="searchSubMenuWrapper">
-                        <span class="searchItems"><a href="#">DATABASE</a></span>
-                        <span class="searchItems"><a href="#">AI DEEP LEARNING</a></span>
-                    </div>
-                    <div class="searchSubMenuWrapper">
-                        <span class="searchItems"><a href="#">로또번호</a></span>
-                        <span class="searchItems"><a href="#">CHAT GPT</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="catContainer">
-                <ul class="catLeftWrapper"><span><i class="fa-solid fa-bars"></i>&nbsp;&nbsp;카테고리</span>
-                    <li></li>
-                </ul>
-                <ul class="catRightWrapper">
-                    <li><a href="#" class="catAreaItems">New</a></li>
-                    <li><a href="#" class="catAreaItems">Best</a></li>
-                    <li><a href="#" class="catAreaItems">FRONT-END</a></li>
-                    <li><a href="#" class="catAreaItems">BACK-END</a></li>
-                    <li><a href="#" class="catAreaItems">Database</a></li>
-                </ul>
-            </div>
-            <ul class="subMenu subMenuLineUp">
-                <div class="subMenuWrapper">
-                    <li class="hiddenMenu">FRONT-END
-                        <a href="#" class="subMenuAtag">HTML5</a>
-                        <a href="#" class="subMenuAtag">CSS</a>
-                        <a href="#" class="subMenuAtag">JavaScript</a>
-                        <a href="#" class="subMenuAtag">Jquery</a>
-                        <a href="#" class="subMenuAtag">TypeScript</a>
-                        <a href="#" class="subMenuAtag">React</a>
-                        <a href="#" class="subMenuAtag">Vue.js</a>
-                        <a href="#" class="subMenuAtag">Backbone</a>
-                    </li>
-                    <li class="hiddenMenu">BACK-END
-                        <a href="#" class="subMenuAtag">Java</a>
-                        <a href="#" class="subMenuAtag">Python</a>
-                        <a href="#" class="subMenuAtag">PHP</a>
-                        <a href="#" class="subMenuAtag">Ruby</a>
-                        <a href="#" class="subMenuAtag">Node.js</a>
-                        <a href="#" class="subMenuAtag">C#</a>
-                        <a href="#" class="subMenuAtag">Kotlin</a>
-                        <a href="#" class="subMenuAtag">Rust</a>
-                    </li>
-                    <li class="hiddenMenu">Database
-                        <a href="#" class="subMenuAtag">MySQL</a>
-                        <a href="#" class="subMenuAtag">MariaDB</a>
-                        <a href="#" class="subMenuAtag">PostgreSQL</a>
-                        <a href="#" class="subMenuAtag">ORACLE</a>
-                        <a href="#" class="subMenuAtag">SQL SERVER</a>
-                        <a href="#" class="subMenuAtag">DB2</a>
-                        <a href="#" class="subMenuAtag">Access</a>
-                        <a href="#" class="subMenuAtag">SQLite</a>
-                    </li>
-                    <li class="hiddenMenu">OS
-                        <a href="#" class="subMenuAtag">Windows</a>
-                        <a href="#" class="subMenuAtag">Linux</a>
-                        <a href="#" class="subMenuAtag">Unix</a>
-                        <a href="#" class="subMenuAtag">Mac</a>
-                        <a href="#" class="subMenuAtag">Android</a>
-                        <a href="#" class="subMenuAtag">iOS</a>
-                        <a href="#" class="subMenuAtag">UBUNTU</a>
-                    </li>
-                    <li class="hiddenMenu">피자
-                        <a href="#" class="subMenuAtag">하와이안피자</a>
-                        <a href="#" class="subMenuAtag">피자헛</a>
-                        <a href="#" class="subMenuAtag">도미노</a>
-                        <a href="#" class="subMenuAtag">피자나라 치킨공주</a>
-                        <a href="#" class="subMenuAtag">시카고피자</a>
-                        <a href="#" class="subMenuAtag">청년피자</a>
-                        <a href="#" class="subMenuAtag">반올림피자</a>
-                        <a href="#" class="subMenuAtag">피자에땅</a>
-                    </li>
-                    <li class="hiddenMenu">C++
-                        <a href="#" class="subMenuAtag">1</a>
-                        <a href="#" class="subMenuAtag">2</a>
-                        <a href="#" class="subMenuAtag">3</a>
-                        <a href="#" class="subMenuAtag">4</a>
-                        <a href="#" class="subMenuAtag">5</a>
-                        <a href="#" class="subMenuAtag">6</a>
-                        <a href="#" class="subMenuAtag">7</a>
-                        <a href="#" class="subMenuAtag">8</a>
-                    </li>
-                </div>
-            </ul>
-        </div>
-        <div class="bgColor bgColorHidden"></div>
-
+        <jsp:include page="/WEB-INF/views/common/header.jsp"/>
     </header>
 
     <main>
         <div class="c_mainContainer">
             <div class="c_topImage">
-                <img src="/img/testImg1.png" />
+                <img src="${pageContext.request.contextPath}/resources/images/testImg1.png" />
             </div>
             <div class="c_topItems">
                 <div class="c_topCategory">
@@ -379,7 +257,7 @@
                         </span>
                     </div>
                     <div>
-                        <img src="/img/img1.png" width="800px" />
+                        <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="800px" />
                     </div>
                     <div>
                         <span>
@@ -398,7 +276,7 @@
                         </span>
                     </div>
                     <div>
-                        <img src="/img/img1.png" width="800px" />
+                        <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="800px" />
                     </div>
                     <div>
                         <span>
@@ -431,12 +309,12 @@
                         </span>
                     </div>
                     <div class="확인용">
-                        <img src="/img/img1.png" width="400px" />
-                        <img src="/img/img1.png" width="400px" />
+                        <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
+                        <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
                     </div>
                     <div class="확인용">
-                        <img src="/img/img1.png" width="400px" />
-                        <img src="/img/img1.png" width="400px" />
+                        <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
+                        <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
                     </div>
                     <div class="확인용1">
                         <div>월급루팡 김코딩의<br>포트폴리오 둘러보기&gt;</div>
@@ -628,7 +506,7 @@
                             </span>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="400px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
                         </div>
                     </div>
                     <div class="확인용8">
@@ -647,7 +525,7 @@
                             </span>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="400px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
                         </div>
                     </div>
                     <div class="확인용8">
@@ -666,7 +544,7 @@
                             </span>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="400px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
                         </div>
                     </div>
                 </div>
@@ -704,7 +582,7 @@
                             <span>* 1:1 코칭권은 클래스 + 코칭권 패키지를 구매한 분들에 한해 적용됩니다.</span>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="400px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="400px" />
                         </div>
                     </div>
                 </div>
@@ -717,7 +595,7 @@
                     </div>
                     <div class="확인용9">
                         <div>
-                            <img src="/img/img1.png" width="300px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="300px" />
                             <div>
                                 <span>
                                     웹 개발 3종 세트
@@ -734,7 +612,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="300px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="300px" />
                             <div>
                                 <span>
                                     웹 개발 3종 세트
@@ -751,7 +629,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="300px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="300px" />
                             <div>
                                 <span>
                                     웹 개발 3종 세트
@@ -770,7 +648,7 @@
                     </div>
                     <div class="확인용9">
                         <div>
-                            <img src="/img/img1.png" width="300px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="300px" />
                             <div>
                                 <span>
                                     웹 개발 3종 세트
@@ -787,7 +665,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="300px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="300px" />
                             <div>
                                 <span>
                                     웹 개발 3종 세트
@@ -804,7 +682,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/img/img1.png" width="300px" />
+                            <img src="${pageContext.request.contextPath}/resources/images/img1.png" width="300px" />
                             <div>
                                 <span>
                                     웹 개발 3종 세트
@@ -861,99 +739,9 @@
     </main>
 
     <footer>
-        <!--footer 전체 감싸는 영역-->
-        <div class="footer_main">
-
-            <!--footer 윗부분-->
-            <div class="footer_content_up">
-
-                <!--footer 윗부분 왼쪽에서 1번째-->
-                <div class="footer_logo">
-                    <!--로고 들어갈 자리-->
-                    <img src="../로고/CAMP404.png">
-
-                    <p>최고에게 배우는 최상의 가치</p>
-
-                    <!--글로벌버튼-->
-                    <div class="button">
-                        <a href="#" class="button_a">
-                            <i class="fa-sharp fa-solid fa-globe"></i>
-                            <p>Camp404 KR</p>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
-                    </div>
-
-                    <!--mouserover 시 열리는 부분-->
-                    <ul class="menu">
-                        <li><a href="#" class="menu_items">Camp404 KR</a></li>
-                        <hr>
-                        <li><a href="#" class="menu_items">Camp404 JP</a></li>
-                        <hr>
-                        <li><a href="#" class="menu_items">Camp404 US</a></li>
-
-                    </ul>
-                </div>
-
-
-
-                <!--footer 윗부분 왼쪽에서2-->
-                <ul class="footer_menu_1">
-                    <p>COMPANY</p>
-                    <li><a href="/html/notice.html">공지사항</a></li>
-                    <li><a href="#">채용안내</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-
-                <!--footer 윗부분 왼쪽에서3-->
-                <ul class="footer_menu_2">
-                    <p>SERVICE</p>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">환불규정</a></li>
-                </ul>
-
-                <!--footer 윗부분 왼쪽에서 4-->
-                <div class="footer_customer">
-                    <p>고객센터</p>
-                    <a href="#">
-                        <div class="footer_customer_box">
-                            문의하기
-                        </div>
-                    </a>
-                    <p>*주중 10~18시/주말 및 공휴일 제외</p>
-                </div>
-            </div>
-
-
-
-
-            <!--footer 아랫부분-->
-            <div class="footer_content_down">
-
-                <!--footer 아랫부분 왼쪽-->
-                <div class="footer_content_down_left">
-                    <div>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-sharp fa-solid fa-blog"></i></a>
-                    </div>
-                </div>
-
-                <!--footer 아랫부분 오른쪽-->
-                <div class="footer_content_down_right">
-                    <p>(주)CAMP404 공동대표 김민수, 이슬기, 이유정, 임형주, 정서윤 서울특별시 종로구 청와대로 1</p>
-                    <p>02-1111-2222 camp404@camp.co.kr 개인정보책임관리자: 이슬기 사업자번호: 810-11-11658 통신판매업 신고번호: 제
-                        2023-서울종로구-청와대: 제 1호</p>
-                </div>
-            </div>
-        </div>
+<jsp:include page="/WEB-INF/views/common/footer.jsp"/>
     </footer>
-    <script src="/js/frontClass.js"></script>
-    <script src="/js/header.js"></script>
-    <!-- <script src="${contextPath}/resources/js/learningPage.js"></script> -->
-    <script src="/js/footer.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/frontClass.js"></script>
 </body>
 
 </html>
