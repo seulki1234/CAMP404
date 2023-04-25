@@ -10,11 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="resources/css/reset.css" />
-    <link rel="stylesheet" href="resources/css/font.css" />
-    <link rel="stylesheet" href="resources/css/index.css" />
-    <link rel="stylesheet" href="resources/css/header.css">
-    <link rel="stylesheet" href="resources/css/footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/reset.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/index.css" />
 
     <!-- jQuery 라이브러리 추가(CDN) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -249,7 +246,7 @@
 
                     <!-- BEST CLASS 과목 3 -->
                     <div class="classItem">
-                        <a href="#" class="imgArea">
+                        <a href="${contextPath}classroom/frontClass" class="imgArea">
                             <img src="resources/images/6.png">
                         </a>
                         <div class="textArea">
@@ -260,7 +257,7 @@
                                 </div>
                                 <div class="likeBtn"><i class="fa-solid fa-heart heart"></i></i></div>
                             </div>
-                            <a href="#">
+                            <a href="${contextPath}classroom/frontClass">
                                 <div class="subText">형, 자바는 이게 제일 쉬워요 ㅋㅋ<br>정말 쉬운 자바_진짜최종_ㅁㄴㅇㄹ.java</div>
                                 <div class="tutorTitle">월급도둑 김코딩</div>
                             </a>
@@ -312,7 +309,7 @@
                     <!-- FRONT-END 과목 1 -->
                     <div class="classItem">
                         <a href="#" class="imgArea">
-                            <img src="/img/img1.png">
+                            <img src="resources/images/img1.png">
                         </a>
                         <div class="textArea">
                             <div class="topText">
@@ -640,10 +637,7 @@
     </footer>
     
 
-    <script src="resources/js/header.js"></script>
-    <!-- <script src="${contextPath}/resources/js/learningPage.js"></script> -->
-    <script src="resources/js/index.js"></script>
-    <script src="resources/js/footer.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/js/index.js"></script>
 </body>
 
 </html>
