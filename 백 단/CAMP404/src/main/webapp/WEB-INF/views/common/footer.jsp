@@ -67,7 +67,7 @@
                 <ul class="footer_menu_1">
                 
                     <p>COMPANY</p>
-                    <li><a href="src/main/webapp/WEB-INF/views/notice/notice.jsp">공지사항</a></li>
+                    <li><a href="${pageContext.request.contextPath}/notice/notice">공지사항</a></li>
                     <li><a href="#">채용안내</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
