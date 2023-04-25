@@ -630,6 +630,7 @@
             <!-- OS class -->
 
         </div>
+        <jsp:include page="/WEB-INF/views/common/Q&ABtn.jsp"/>
     </main>
 
     <footer>
