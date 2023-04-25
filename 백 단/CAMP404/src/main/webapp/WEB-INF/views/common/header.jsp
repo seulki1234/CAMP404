@@ -49,7 +49,7 @@
                 <!-- 290 ㅌ 35 -->
                 <div class="rightWrapper">
                     <div class="rightAreaItem">
-                        <a class="loginArea" href="/html/login.html">로그인</a>
+                        <a class="loginArea" href="/html/login.jsp">로그인</a>
                         <span class="closeSearch closeSearchHide">x</span>
                     </div>
                 </div>
