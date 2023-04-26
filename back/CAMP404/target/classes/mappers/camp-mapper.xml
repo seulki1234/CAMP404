@@ -10,13 +10,8 @@
 	<result property="userNick" column="USER_NICK"/>
 	<result property="userTel" column="USER_TEL"/>
 	<result property="userAddress" column="USER_ADDR"/>
-	<result property="enrollDate" column=""/>
-	<result property="" column=""/>
-	<result property="" column=""/>
-	<result property="" column=""/>
-	<result property="" column=""/>
-	<result property="" column=""/>
-	<result property="" column=""/>
+	
+	
 	
 </resultMap>
 </mapper>
