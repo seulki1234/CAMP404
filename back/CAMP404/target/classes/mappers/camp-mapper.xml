@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="campMapper">
+<resultMap type="camp" id="camp_rm">
+	<id property="userNo" column="USER_NO"/>
+	<result property="userEmail" column="USER_EMAIL" />
+	<result property="userId" column="USER_ID"/>
+	<result property="userPw" column="USER_PW"/>
+	<result property="userName" column="USER_NAME"/>
+	<result property="userNick" column="USER_NICK"/>
+	<result property="userTel" column="USER_TEL"/>
+	<result property="userAddress" column="USER_ADDR"/>
+	
+	
+	
+</resultMap>
+</mapper>
