@@ -18,14 +18,14 @@ public class Camp {
 	private String mgrPw;
 	
 	// 학생
-	private int userNo;
-	private String userId;
-	private String userPw;
-	private String userName;
-	private String userEmail;
-	private String userNick;
-	private String userTel;
-	private String userAddress;
+	private int usersNo;
+	private String usersId;
+	private String usersPw;
+	private String usersName;
+	private String usersEmail;
+	private String usersNick;
+	private String usersTel;
+	private String usersAddress;
 	private String enrollDate;
 	private String secessionFlag;
 	
